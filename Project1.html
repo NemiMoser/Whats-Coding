@@ -2,35 +2,44 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>What's Coding?</title>
+    <title>What's Front-End Development?</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;500&family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;500&family=Poppins:wght@300;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="./assets/favicon.svg" type="image/x-icon">
 </head>
 <body>
     <!--HomePage-->
     <div id="titleArea">
-        <h1>What's Coding?</h1>
-        <div class="cards">
-            <div class="htmlCard d-flex col-md-4">
-                <h3>HTML</h3>
+        <h1>What's Front-End Development?</h1>
+        <div class="card-container">
+            <div class="card">
+                <h3><i class="fa-brands fa-html5"></i>HTML</h3>
                 <div>description</div>
-                <img src="https://dummyimage.com/150x150/000/fff.jpg&text=html+code">
-                <button class="learnMore">Learn More</button>
+                <img src="./assets/screenshot 3.png" alt="card image" class="bottom-image">
+                <button class="btn">Learn More!</button>
             </div>
-            <div class="cssCard d-flex col-md-4">
-                <h3>CSS</h3>
+            <div class="card">
+                <h3><i class="fa-brands fa-css3-alt"></i>CSS</h3>
                 <div>description</div>
-                <img src="https://dummyimage.com/150x150/000/fff.jpg&text=css+code">
-                <button class="learnMore">Learn More</button>
+                <img src="./assets/screenshot 2.png" alt="card image" class="bottom-image">
+                <button class="btn">Learn More!</button>
             </div>
-            <div class="jsCard d-flex col-md-4">
-                <h3>JavaScript</h3>
+            <div class="card">
+                <h3><i class="fa-brands fa-js"></i>JavaScript</h3>
                 <div>description</div>
-                <img src="https://dummyimage.com/150x150/000/fff.jpg&text=js+code">
-                <button class="learnMore">Learn More</button>
+                <img src="./assets/screenshot 1.png" alt="card image" class="bottom-image">
+                <button class="btn">Learn More!</button>
             </div>
         </div>
     </div>
 
     <script src="assets/script.js"></script>
+    <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
 </body>
 </html>
