@@ -37,11 +37,11 @@ h1 {
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    padding: 20px 30px 90px 30px;
+    padding: 20px 40px 30px 40px;
     border: 2px solid white;
     margin: 15px;
     box-shadow: 0 5px 15px rgb(86, 86, 86);
-    width: 20vw;
+    width: 30vw;
     height: 60vh;
 }
 
@@ -77,23 +77,78 @@ h1 {
     color: #66545e;
 }
 
-.bottom-image {
-    width: 100%;
-    margin-top: 35%;
-    height: 170px;
+.description {
+    position: relative;
+    font-size: 18px;
+    top: -60px;
+    text-indent: 40px;
+    height: 150px;
+    overflow: auto;
+    padding: 5px;
 }
 
-@media (max-width: 1065px) {
+.bold {
+    color: #66545e;
+}
+
+hr {
+    border: none;
+    border: 1px solid white;
+    position: relative;
+    top: -60px;
+}
+
+.bottom-image {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -50px;
+    height: 200px;
+}
+
+img {
+    border: 2px solid #f6e0b5;
+}
+
+
+@media (max-width: 1510px) {
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .card {
+        width: 40%;
+    }
+    .bottom-image {
+        height: 150px;
+    }
+    h1 {
+        font-size: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
     .card-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .card {
-        width: 60%;
+        width: 70%;
+        padding: 20px 40px 30px 40px;
     }
     .bottom-image {
-        margin-top: 30%;
+        height: 250px;
+    }
+    .description {
         height: 200px;
+    }
+    h1 {
+        font-size: 70px;
+        display: flex;
+        flex-direction: column;
     }
 }
