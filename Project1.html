@@ -2,35 +2,73 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>What's Coding?</title>
+    <title>What's Front-End Development?</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;500&family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;500&family=Poppins:wght@300;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="./assets/favicon.svg" type="image/x-icon">
 </head>
 <body>
-    <!--HomePage-->
+    <!-- HomePage -->
     <div id="titleArea">
-        <h1>What's Coding?</h1>
-        <div class="cards">
-            <div class="htmlCard d-flex col-md-4">
-                <h3>HTML</h3>
-                <div>description</div>
-                <img src="https://dummyimage.com/150x150/000/fff.jpg&text=html+code">
-                <button class="learnMore">Learn More</button>
+        <h1>What's Front-End Development?</h1>
+        <div class="card-container">
+            <!-- HTML Card -->
+            <div class="card">
+                <h3><i class="fa-brands fa-html5"></i>HTML</h3>
+                <div>HTML description</div>
+                <a class="openModal" data-modal="htmlModal" data-topic="HTML">...</a>
+                <div id="htmlModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('htmlModal')">&times;</span>
+                        <h2>HTML</h2>
+                        <div id="htmlModal-content"></div>
+                    </div>
+                </div>
+                <img src="./assets/screenshot3.png" alt="card image" class="bottom-image">
+                <button class="btn">Learn More!</button>
             </div>
-            <div class="cssCard d-flex col-md-4">
-                <h3>CSS</h3>
-                <div>description</div>
-                <img src="https://dummyimage.com/150x150/000/fff.jpg&text=css+code">
-                <button class="learnMore">Learn More</button>
+
+            <!-- CSS Card -->
+            <div class="card">
+                <h3><i class="fa-brands fa-css3-alt"></i>CSS</h3>
+                <div>CSS description</div>
+                <a class="openModal" data-modal="cssModal" data-topic="CSS">...</a>
+                <div id="cssModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('cssModal')">&times;</span>
+                        <h2>CSS</h2>
+                        <div id="cssModal-content"></div>
+                    </div>
+                </div>
+                <img src="./assets/screenshot2.png" alt="card image" class="bottom-image">
+                <button class="btn">Learn More!</button>
             </div>
-            <div class="jsCard d-flex col-md-4">
-                <h3>JavaScript</h3>
-                <div>description</div>
-                <img src="https://dummyimage.com/150x150/000/fff.jpg&text=js+code">
-                <button class="learnMore">Learn More</button>
+
+            <!-- JavaScript Card -->
+            <div class="card">
+                <h3><i class="fa-brands fa-js"></i>JavaScript</h3>
+                <div>JavaScript description</div>
+                <a class="openModal" data-modal="jsModal" data-topic="JavaScript">...</a>
+                <div id="jsModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal('jsModal')">&times;</span>
+                        <h2>JavaScript</h2>
+                        <div id="jsModal-content"></div>
+                    </div>
+                </div>
+                <img src="./assets/screenshot1.png" alt="card image" class="bottom-image">
+                <button class="btn">Learn More!</button>
             </div>
         </div>
     </div>
 
     <script src="assets/script.js"></script>
+    <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
 </body>
 </html>
