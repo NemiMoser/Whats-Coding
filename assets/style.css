@@ -22,6 +22,7 @@ h1 {
     position: relative;
     bottom: 50px;
     color: #f6e0b5;
+    text-shadow: 4px 7px 8px rgba(48, 69, 41, 0.51);
 }
 
 .card-container {
