@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 1;
     align-items: center;
     min-height: 100vh;
     background-color: #eea990;
@@ -17,7 +17,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: lighter;
     position: relative;
     bottom: 50px;
@@ -27,7 +27,7 @@ h1 {
 .card-container {
     display: flex;
     position: relative;
-    bottom: 90px;
+    bottom: 100px;
     justify-content: center;
     margin: 10px;
     padding: 10px;
@@ -44,7 +44,7 @@ h1 {
     margin: 15px;
     box-shadow: 0 5px 10px rgb(86, 86, 86);
     width: 30vw;
-    height: 60vh;
+    height: 65vh;
 }
 
 .card h3 {
@@ -110,7 +110,7 @@ hr {
     flex-direction: column;
     position: relative;
     top: -50px;
-    height: 200px;
+    height: 170px;
 }
 
 img {
@@ -120,9 +120,9 @@ img {
 
 footer {
     position: relative;
-    bottom: 10px;
+    bottom: 20px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 
@@ -152,7 +152,7 @@ footer {
         align-items: center;
     }
     .card {
-        width: 90%;
+        width: 70%;
         padding: 20px 40px 30px 40px;
     }
     .bottom-image {
