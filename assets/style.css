@@ -1,0 +1,170 @@
+/* #region Homepage Styling */
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 1;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eea990;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: lighter;
+    position: relative;
+    bottom: 50px;
+    color: #f6e0b5;
+}
+
+.card-container {
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 40px 30px 40px;
+    border: 2px solid white;
+    margin: 15px;
+    box-shadow: 0 5px 10px rgb(86, 86, 86);
+    width: 30vw;
+    height: 65vh;
+}
+
+.card h3 {
+    position: relative;
+    bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #f6e0b5;
+    font-size: 32px;
+}
+
+.homepage-btn {
+    display: inline-flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #66545e;
+    border: none;
+    border-radius: 20px;
+    margin: 4px 4px;
+    padding: 10px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.homepage-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.homepage-btn:hover {
+    background-color: #eea990;
+
+}
+
+.description {
+    position: relative;
+    font-size: 18px;
+    top: -60px;
+    text-indent: 40px;
+    height: 150px;
+    overflow: auto;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+.bold {
+    color: #66545e;
+}
+
+hr {
+    border: none;
+    border: 1px solid white;
+    position: relative;
+    top: -60px;
+}
+
+.bottom-image {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -50px;
+    height: 170px;
+}
+
+img {
+    border: 2px solid #f6e0b5;
+}
+
+
+footer {
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+@media (max-width: 1510px) {
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .card {
+        width: 40%;
+    }
+    .bottom-image {
+        height: 150px;
+    }
+    h1 {
+        font-size: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 70%;
+        padding: 20px 40px 30px 40px;
+    }
+    .bottom-image {
+        height: 250px;
+    }
+    .description {
+        height: 200px;
+    }
+    h1 {
+        font-size: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* #endregion */

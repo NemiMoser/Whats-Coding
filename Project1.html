@@ -1,36 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>What's Coding?</title>
+    <meta charset="UTF-8"/>
+    <title>What's Front-End Development?</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;500&family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;500&family=Poppins:wght@300;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" href="./assets/favicon.svg" type="image/x-icon">
 </head>
 <body>
     <!--HomePage-->
     <div id="titleArea">
-        <h1>What's Coding?</h1>
-        <div class="cards">
-            <div class="htmlCard d-flex col-md-4">
-                <h3>HTML</h3>
-                <div>description</div>
-                <img src="https://dummyimage.com/150x150/000/fff.jpg&text=html+code">
-                <button class="learnMore">Learn More</button>
+        <h1>What's Front-End Development?</h1>
+        <div class="card-container">
+            <div class="card">
+                <h3><i class="fa-brands fa-html5"></i>HTML</h3>
+                <div>
+                    <p class="description">
+                        Basic HTML (<b class="bold">Hypertext Markup Language</b>) code serves as the foundation for constructing web pages. It employs a set of <b class="bold">tags</b> that define the structure and content of a webpage. These tags are enclosed within angle brackets and indicate the role of each element on the page.  
+                        For example, the '<head>' section typically contains meta-information like the page title, while the '<body>' section holds the visible content such as text, images, and links. 
+                        HTML tags can also include <b class="bold">attributes</b> to modify the behavior or appearance of elements, like adjusting image sizes or creating hyperlinks. 
+                        By combining these simple building blocks, developers create the structure and content that browsers interpret and render as a complete webpage. 
+                    </p>
+                    <hr>
+                </div>
+                <img src="./assets/screenshot3.png" alt="card image" class="bottom-image">
+                <button class="homepage-btn">
+                    <a href="HTMLPage.html"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Learn More!</a>
+                </button>
             </div>
-            <div class="cssCard d-flex col-md-4">
-                <h3>CSS</h3>
-                <div>description</div>
-                <img src="https://dummyimage.com/150x150/000/fff.jpg&text=css+code">
-                <button class="learnMore">Learn More</button>
+            <div class="card">
+                <h3><i class="fa-brands fa-css3-alt"></i>CSS</h3>
+                <div>
+                    <p class="description">
+                        Basic CSS (<b class="bold">Cascading Style Sheets</b>) code is used to control the presentation and visual styling of HTML elements in web pages. It works by defining rules that specify how elements should appear on the screen or in print. 
+                        CSS separates the content and structure of a webpage (defined by HTML) from its design aspects. Developers use CSS to define properties such as colors, fonts, margins, padding, and positioning for different elements. 
+                        <b class="bold">Selectors</b> are used to target specific HTML elements, and then corresponding properties and values are assigned to these selectors to achieve the desired design effects. 
+                        By implementing CSS alongside HTML, web designers can create visually appealing and consistent layouts across their websites.
+                    </p>
+                    <hr>
+                </div>
+                <img src="./assets/screenshot2.png" alt="card image" class="bottom-image">
+                <button class="homepage-btn">
+                    <a href="CSSPage.html"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Learn More!</a>
+                </button>
             </div>
-            <div class="jsCard d-flex col-md-4">
-                <h3>JavaScript</h3>
-                <div>description</div>
-                <img src="https://dummyimage.com/150x150/000/fff.jpg&text=js+code">
-                <button class="learnMore">Learn More</button>
+            <div class="card">
+                <h3><i class="fa-brands fa-js"></i>JavaScript</h3>
+                <div>
+                    <p class="description">
+                        Basic JavaScript code refers to a programming language primarily used for enhancing the <b class="bold">interactivity and functionality</b> of web pages. It enables dynamic behavior by allowing developers to manipulate HTML and CSS elements in real time. 
+                        JavaScript can be used to create features like form validation, interactive animations, and responsive content updates without the need to reload the entire page. 
+                        Developers write JavaScript code using <b class="bold">functions, variables, and control structures</b> to execute specific actions based on user interactions or predefined conditions. 
+                        When integrated with HTML and CSS, JavaScript completes the trio of technologies that power the modern web experience.
+                    </p>
+                    <hr>
+                </div>
+                <img src="./assets/screenshot1.png" alt="card image" class="bottom-image">
+                <button class="homepage-btn">
+                    <a href="JSPage.html"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Learn More!</a>
+                </button>
             </div>
         </div>
+        <footer>
+            <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
+        </footer>
     </div>
-
     <script src="assets/script.js"></script>
+    <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
 </body>
 </html>
