@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assetsWC/learnable.css">
+    <meta charset="UTF-8"/>
     <style> 
         .navbar {
-        background-color: white;
         overflow: hidden;
         text-align: right;
         }
-        .navbar a:hover {
-            display: inline-block;
-            background-color: #aeb0f1;
-            color: black;
-        }
         .sidebar {
             width: 150px;
-            height: 100%;
-            background-color: rgb(170, 146, 146);
+            height: 40%;
+            background-color: #aa6f73;
             position: fixed;
+            border-style: double;
         }
         .list-items {
             list-style-type: none;
@@ -33,21 +29,27 @@
             padding: 20px;
         }
 
+        
         .columns-container {
-            display: grid;
+            display: flex;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            margin-left: 190px;
+            margin-left: 150px;
+            padding-bottom: 20px;
         }
+
         .column {
             flex: 1;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid white;
+            box-shadow: 0 5px 10px rgb(86, 86, 86);
             margin: 10px;
+            max-height: 500px;
+            overflow-y: auto;
         }
         .topicDescription {
             margin-right: 10px;
-            grid-row: 1 / span 2;
+            grid-row: 1 / span 1;
         }
         .rawCode {
             display: flex;
@@ -60,9 +62,9 @@
     <title>CSS</title>
 </head>
 <body>
-    <h1 id="cssTitle"> CSS </h1>
+    <h1 class="page-title"><i class="fa-brands fa-css3-alt" style="padding-right: 5px;"></i>CSS</h1>
         <div class="navbar">
-            <a href="./Project1.html">Home</a>
+            <a href="./Project1.html"><i class="fa-solid fa-house"></i></a>
             <a href="./HTMLPage.html">HTML</a>
             <a href="./CSSPage.html">CSS</a>
             <a href="./JSPage.html">JavaScript</a>
@@ -78,91 +80,96 @@
         </div>
         
         <!--sections-->
-        <section id="background">
+        <h2 id="background">Background</h2>
+        <section>
             <div class="columns-container">
-                <div class="column topicDescription">
-                    <h4>Changing a Background Color</h4>
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                </div>
+                    <div class="column topicDescription">
+                        <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    </div>
 
-            <div class="column deployedScreenshot">
-                <p>Screenshot of deployed site</p>
-                <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
-            </div>
-
-            <div class="column rawCode">
-                <p>Raw Code of deployed site</p>
-                <p>codecodecode</p>
-                <div class="button">
-                    <button>Try It!</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="fontsize">
-            <div class="columns-container">
-                <div class="column topicDescription">
-                    <h4>Changing the Font Size</h4>
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                </div>
-
-            <div class="column deployedScreenshot">
-                <p>Screenshot of deployed site</p>
+                <div class="column deployedScreenshot">
+                    <p>Screenshot of deployed site</p>
                     <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
-            </div>
+                </div>
 
-            <div class="column rawCode">
-                <p>Raw Code of deployed site</p>
-                <p>codecodecode</p>
-                <div class="button">
-                    <button>Try It!</button>
+                <div class="column rawCode">
+                    <p>Raw Code of deployed site</p>
+                    <p>codecodecode</p>
+                    <div class="try-button">
+                        <button>Try It!</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="boxshadow">
+        <h2 id="fontsize">Changing the Font Size</h2>
+        <section>
             <div class="columns-container">
-                <div class="column topicDescription">
-                    <h4>Creating a Box Shadow</h4>
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    <div class="column topicDescription">
+                        <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    </div>
+
+                <div class="column deployedScreenshot">
+                    <p>Screenshot of deployed site</p>
+                        <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
                 </div>
 
-            <div class="column deployedScreenshot">
-                <p>Screenshot of deployed site</p>
-                    <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
-            </div>
-
-            <div class="column rawCode">
-                <p>Raw Code of deployed site</p>
-                <p>codecodecode</p>
-                <div class="button">
-                    <button>Try It!</button>
+                <div class="column rawCode">
+                    <p>Raw Code of deployed site</p>
+                    <p>codecodecode</p>
+                    <div class="button">
+                        <button>Try It!</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="textcolor">
+        <h2 id="boxshadow">Creating a Box Shadow</h2>
+        <section>
             <div class="columns-container">
-                <div class="column topicDescription">
-                    <h4>Changing the Text Color</h4>
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    <div class="column topicDescription">
+                        <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    </div>
+
+                <div class="column deployedScreenshot">
+                    <p>Screenshot of deployed site</p>
+                        <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
                 </div>
 
-            <div class="column deployedScreenshot">
-                <p>Screenshot of deployed site</p>
-                    <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
-            </div>
-
-            <div class="column rawCode">
-                <p>Raw Code of deployed site</p>
-                <p>codecodecode</p>
-                <div class="button">
-                    <button>Try It!</button>
+                <div class="column rawCode">
+                    <p>Raw Code of deployed site</p>
+                    <p>codecodecode</p>
+                    <div class="button">
+                        <button>Try It!</button>
+                    </div>
                 </div>
             </div>
         </section>
 
-    </div>
-    
+        <h2 id="textcolor">Changing the Text Color</h2>
+        <section>
+            <div class="columns-container">
+                    <div class="column topicDescription">
+                        <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    </div>
+
+                <div class="column deployedScreenshot">
+                    <p>Screenshot of deployed site</p>
+                        <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
+                </div>
+
+                <div class="column rawCode">
+                    <p>Raw Code of deployed site</p>
+                    <p>codecodecode</p>
+                    <div class="button">
+                        <button>Try It!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
+        </footer>
+    <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
 </body>
 </html>
