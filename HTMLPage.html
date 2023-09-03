@@ -34,7 +34,7 @@
             display: flex;
             flex: 1;
             gap: 20px;
-            margin-left: 150px;
+            margin-left: 200px;
             padding-bottom: 20px;
         }
         .column {
@@ -58,7 +58,7 @@
             margin-top: 10px;
         }
     </style>
-    <title>JavaScript</title>
+    <title>HTML</title>
 </head>
 <body>
         <h1 class="page-title"><i class="fa-brands fa-html5" style="padding-right: 5px;"></i>HTML</h1>
@@ -92,12 +92,12 @@
                 </div>
 
                 <div class="column deployedScreenshot">
-                    <img src="./assetsWC/htmlScreenshot1.jpg" alt="Example image of deployed html code">
+                    <img src="./assetsWC/htmlScreenshot1.jpg" alt="Example image of deployed html code" width="400" height="300">
                     <p>In the example listed here, we can see the title of the page is larger than the message listed below it.</p>
                 </div>
 
                 <div class="column rawCode">
-                    <p>Here's what the code looks like:</p>
+                    <p><b>Here's what the code looks like:</b></p>
                     <pre>
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
@@ -111,7 +111,9 @@
                     &lt;/body&gt;
                     &lt;/html&gt;
                     </pre>
-                    <button class="try-button">Try It!</button>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -127,12 +129,12 @@
                 </div>
 
                 <div class="column deployedScreenshot">
-                        <img src="./assetsWC/htmlScreenshot2.jpg">
+                        <img src="./assetsWC/htmlScreenshot2.jpg" width="400" height="300">
                         <p>To change the example to an ordered list, we would simply change the &lt;ul&gt; tag to an &lt;ol&gt; tag and then the items would be listed as 1. HTML Set-up 2. List Items 3. Linking CSS 4. Linking an Image.</p>
                 </div>
 
                 <div class="column rawCode">
-                    <p>Here's what the code looks like:</p>
+                    <p><b>Here's what the code looks like:</b></p>
                     <pre>
                         &lt;!DOCTYPE html&gt;
                         &lt;html&gt;
@@ -152,19 +154,13 @@
                         &lt;/body&gt;
                         &lt;/html&gt;
                     </pre>
-                    <button class="try-button">Try It!</button>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
 
-        <section id="learnable4"><div class="columns-container">
-            <div class="column topicDescription">
-                <h4>Linking an Image</h4>
-                <p>Adding an image to your web page can also make it more appealing for the users visiting your application. Like CSS, an image is linked using tags.<br><br>Once you've selected the image you want to include and you have saved it to your directory, you will use the &lt;img&gt; tag to specify the path to the image and enter it in the desired section.<br><br>For example, if you're creating an application about HTML and how it works, you can include an image of the logo directly in the code.</p>
-            </div>
-
-            <div class="column deployedScreenshot">
-                    <img src="./assetsWC/htmlscreenshot5.jpg">
         <h2 id="learnable3">Linking CSS</h2>
         <section>
             <div class="columns-container">
@@ -173,11 +169,11 @@
                 </div>
 
                 <div class="column deployedScreenshot">
-                        <img src="./assetsWC/htmlScreenshot3.jpg">
+                        <img src="./assetsWC/htmlScreenshot3.jpg" class="image-only" width="400" height="300">
                 </div>
 
                 <div class="column rawCode">
-                    <p>Here's what the code looks like:</p>
+                    <p><b>Here's what the code looks like:</b></p>
                     <pre>
                         &lt;!DOCTYPE html&gt;
                         &lt;html&gt;
@@ -191,59 +187,46 @@
                         &lt;/body&gt;
                         &lt;/html&gt;
                     </pre>
-                    <button class="try-button">Try It!</button>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
 
-            <div class="column rawCode">
-                <p>Here's what the code looks like:</p>
-                <pre>
-                &lt;!DOCTYPE html&gt;
-                &lt;html&gt;
-                &lt;head&gt;
-                    &lt;meta charset="UTF-8" /&gt;
-                    &lt;title&gt; Linking an Image &lt;/title&gt;
-                    &lt;link rel="stylesheet" href="styles.css"&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;h1&gt; Learn More About HTML &lt;/h1&gt;
-                    &lt;img&gt; src="./assetsWC/image.png"&lt;>&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-                </pre>
-                <div class="button">
-                    <button>Try It!</button>
         <h2 id="learnable4">Linking an Image</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                <p>Adding an image to your web page can also make it more appealing for the users visiting your application. Like CSS, an image is linked using tags.<br><br>Once you've selected an the image you want to include and you have saved it to your directory, you will use the &lt;img&gt; tag to to specify the path to the image and enter it in the desired section.<br><br>For example, if you're creating an application about HTML and how it works, you can include an image of the logo directly in the code.</p>
-
+                <p>Adding an image to your web page can also make it more appealing for the users visiting your application. Like CSS, an image is linked using tags.
+                    <br><br>Once you've selected an the image you want to include and you have saved it to your directory, you will use the &lt;img&gt; tag to to specify the path to the image and enter it in the desired section.
+                    <br><br>For example, if you're creating an application about HTML and how it works, you can include an image of the logo directly in the code.
+                </p>
                 </div>
 
                 <div class="column deployedScreenshot">
-                    <img src="./WhatsCoding/Whats-Coding/assetsWC/htmlscreenshot5.jpg">
-
+                    <img src="./assetsWC/htmlscreenshot5.jpg" class="image-only" width="400" height="300">
                 </div>
 
                 <div class="column rawCode">
-                    <p>Here's what the code looks like:</p>
-                <pre>
-                &lt;!DOCTYPE html&gt;
-                &lt;html&gt;
-                &lt;head&gt;
-                    &lt;meta charset="UTF-8" /&gt;
-                    &lt;title&gt; Linking an Image &lt;/title&gt;
-                    &lt;link rel="stylesheet" href="styles.css"&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;h1&gt; Learn More About HTML &lt;/h1&gt;
-                    &lt;img&gt; src="./assetsWC/image.png"&lt;>&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-                </pre>
-                    <button class="try-button">Try It!</button>
+                    <p><b>Here's what the code looks like:</b></p>
+                    <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8" /&gt;
+                        &lt;title&gt; Linking an Image &lt;/title&gt;
+                        &lt;link rel="stylesheet" href="styles.css"&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt; Learn More About HTML &lt;/h1&gt;
+                        &lt;img&gt; src="./assetsWC/image.png"&lt;>&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                    </pre>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
