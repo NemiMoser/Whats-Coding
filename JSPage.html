@@ -78,82 +78,113 @@
         </div>
 
         <!--sections-->
-        <h2 id="variables">Variables</h2>
-        <section>
-            <div class="columns-container">
-                <div class="column topicDescription">
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                </div>
+        <section id="variables"><div class="columns-container">
+            <div class="column topicDescription">
+                <h4>Variables</h4>
+                <p>Variables in codes are used as a form of symbolic name for values in an application. Also known as identifiers, the variable names conform to certain sets of rules and must have a unique name.<br><br>They can be used as containers that store values, for example: myName = "John". In this variable, you are assigning the string "John" to the myName variable.</p>
+            </div>
 
-                <div class="column deployedScreenshot">
-                    <p>Screenshot of deployed site</p>
-                        <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
-                </div>
+            <div class="column deployedScreenshot">
+                    <img src="./assetsWC/variableScreenshot.jpg">
+            </div>
 
-                <div class="column rawCode">
-                    <p>Raw Code of deployed site</p>
-                    <p>codecodecode</p>
-                    <button class="try-button">Try It!</button>
+            <div class="column rawCode">
+                <p>Here's what that looks like in the console:</p>
+                <pre>
+                    var myName = "John";
+                    var message = "Hello world! My name is ";
+
+                    console.log(message + myName + ".");
+                    </pre>
+                <div class="button">
+                    <button>Try It!</button>
                 </div>
             </div>
         </section>
 
-        <h2 id="functions">Functions</h2>
-        <section>
-            <div class="columns-container">
-                <div class="column topicDescription">
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                </div>
+        <section id="functions"><div class="columns-container">
+            <div class="column topicDescription">
+                <h4>Functions</h4>
+                <p>Functions are the basic building blocks of JavaScript and they are a way of packaging functionality that you wish to reuse in your code. Functions are a good alternative to writing the same code repeatedly since they can be used multiple times. This allows us to make our code more organized and more readable.<br><br>Nested functions could have one or more inner functions. The outer functions cannot access variables that are defined inside of the inner functions but inner functions can access variables in outer functions.</p>
+            </div>
 
-                <div class="column deployedScreenshot">
-                    <p>Screenshot of deployed site</p>
-                        <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
-                </div>
+            <div class="column deployedScreenshot">
+                    <img src="./assetsWC/functionScreenshot.jpg">
+            </div>
 
-                <div class="column rawCode">
-                    <p>Raw Code of deployed site</p>
-                    <p>codecodecode</p>
-                    <button class="try-button">Try It!</button>
+            <div class="column rawCode">
+                <p>Here's what that looks like in the console:</p>
+                    <pre>
+                    function addNumbers(num1,num2,num3) {
+                    var result = num1 + num2 + num3;
+                    return result;
+                    }
+                    
+                    var result = addNumbers(3, 5, 7);
+                    console.log(result);
+                    </pre>
+                <div class="button">
+                    <button>Try It!</button>
                 </div>
             </div>
         </section>
 
-        <h2 id="ifelse">If Else</h2>
-        <section>
-            <div class="columns-container">
-                <div class="column topicDescription">
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                </div>
+        <section id="ifelse"><div class="columns-container">
+            <div class="column topicDescription">
+                <h4>If Else Statements</h4>
+                <p>An "if-else" statement is a very common form of conditional used to test if a true or false expression is returned. It allows you to make decisions directly in your code and can even control the flow of the program based on the set conditions.<br><br>For the "if" part, if the condition is in fact true, the code inside that block is executed. If it is false then it is skipped and goes to the "else" part. This is where an alternative set of instructions would be executed since the initial statement was not met.</p>
+            </div>
 
-                <div class="column deployedScreenshot">
-                    <p>Screenshot of deployed site</p>
-                        <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
-                </div>
+            <div class="column deployedScreenshot">
+                    <img src="./assetsWC/ifelseScreenshot.jpg">
+            </div>
 
-                <div class="column rawCode">
-                    <p>Raw Code of deployed site</p>
-                    <p>codecodecode</p>
-                    <button class="try-button">Try It!</button>
+            <div class="column rawCode">
+                <p>Here's what that looks like in the console:</p>
+                    <pre>
+                    var x = 100;
+                    var expression1 = (x > 25);
+                    var expression2 = (x < 50);
+
+                    if(expression1 && expression2) {
+                        console.log('True True');
+
+                    } else if(expression1) {
+                        console.log('True False');
+
+                    } else if(expression2) {
+                        console.log('False True');
+
+                    } else {
+                        console.log('False False');
+                    }
+                    </pre>
+                <div class="button">
+                    <button>Try It!</button>
                 </div>
             </div>
         </section>
         
-        <h2 id="arrays">Arrays</h2>
-        <section>
-            <div class="columns-container">
-                <div class="column topicDescription">
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-                </div>
+        <section id="arrays"><div class="columns-container">
+            <div class="column topicDescription">
+                <h4>Arrays</h4>
+                <p>An array is a structure used to store a collection of data values. These can be various data types. You would declare the arrays in JavaScript and give them a name.<br><br>For example, if you want to create a list of vegetables, the array could be given a variable name of "vegetables" and the items would be listed out.</p>
+            </div>
 
-                <div class="column deployedScreenshot">
-                    <p>Screenshot of deployed site</p>
-                        <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
-                </div>
+            <div class="column deployedScreenshot">
+                    <img src="./assetsWC/arrayScreenshot.jpg">
+            </div>
 
-                <div class="column rawCode">
-                    <p>Raw Code of deployed site</p>
-                    <p>codecodecode</p>
-                    <button class="try-button">Try It!</button>
+            <div class="column rawCode">
+                <p>Here's what that looks like in the console:</p>
+                    <pre>
+                    var vegetables = ["lettuce", "onion", "cabbage", "potato", "carrot"];
+                    var message = "I need to buy: "
+                        
+                    console.log(message + vegetables + ".");
+                    </pre>
+                <div class="button">
+                    <button>Try It!</button>
                 </div>
             </div>
         </section>
