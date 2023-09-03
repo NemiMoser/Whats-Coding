@@ -33,7 +33,7 @@
             display: flex;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            margin-left: 150px;
+            margin-left: 200px;
             padding-bottom: 20px;
         }
         .column {
@@ -86,18 +86,20 @@
                 </div>
 
                 <div class="column deployedScreenshot">
-                        <img src="./assetsWC/variableScreenshot.jpg">
+                        <img src="./assetsWC/variableScreenshot.jpg" class="image-only" width="350" height="150">
                 </div>
 
                 <div class="column rawCode">
-                    <p>Here's what that looks like in the console:</p>
+                    <p><b>Here's what the code looks like:</b></p>
                     <pre>
                         var myName = "John";
                         var message = "Hello world! My name is ";
 
                         console.log(message + myName + ".");
                         </pre>
-                        <button class="try-button">Try It!</button>
+                        <button class="try-button">
+                            <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                        </button>
                 </div>
             </div>
         </section>
@@ -110,11 +112,11 @@
                 </div>
 
                 <div class="column deployedScreenshot">
-                        <img src="./assetsWC/functionScreenshot.jpg">
+                        <img src="./assetsWC/functionScreenshot.jpg" class="image-only" width="400" height="300">
                 </div>
 
                 <div class="column rawCode">
-                    <p>Here's what that looks like in the console:</p>
+                    <p><b>Here's what the code looks like:</b></p>
                         <pre>
                         function addNumbers(num1,num2,num3) {
                         var result = num1 + num2 + num3;
@@ -124,7 +126,9 @@
                         var result = addNumbers(3, 5, 7);
                         console.log(result);
                         </pre>
-                        <button class="try-button">Try It!</button>
+                        <button class="try-button">
+                            <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                        </button>
                 </div>
             </div>
         </section>
@@ -137,11 +141,11 @@
                 </div>
 
                 <div class="column deployedScreenshot">
-                        <img src="./assetsWC/ifelseScreenshot.jpg">
+                        <img src="./assetsWC/ifelseScreenshot.jpg" class="image-only" width="400" height="300">
                 </div>
 
                 <div class="column rawCode">
-                    <p>Here's what that looks like in the console:</p>
+                    <p><b>Here's what the code looks like:</b></p>
                         <pre>
                         var x = 100;
                         var expression1 = (x > 25);
@@ -160,7 +164,9 @@
                             console.log('False False');
                         }
                         </pre>
-                        <button class="try-button">Try It!</button>
+                        <button class="try-button">
+                            <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                        </button>
                 </div>
             </div>
         </section>
@@ -173,19 +179,21 @@
                 </div>
 
                 <div class="column deployedScreenshot">
-                        <img src="./assetsWC/arrayScreenshot.jpg">
+                        <img src="./assetsWC/arrayScreenshot.jpg" class="image-only" width="450" height="150">
                 </div>
 
-                <div class="column rawCode">
-                    <p>Here's what that looks like in the console:</p>
-                        <pre>
-                        var vegetables = ["lettuce", "onion", "cabbage", "potato", "carrot"];
-                        var message = "I need to buy: "
-                            
-                        console.log(message + vegetables + ".");
-                        </pre>
-                        <button class="try-button">Try It!</button>
-                </div>
+            <div class="column rawCode">
+                <p><b>Here's what the code looks like:</b></p>
+                <pre>
+                var vegetables = ["lettuce", "onion", "cabbage", "potato", "carrot"];
+                var message = "I need to buy: "
+                    
+                console.log(message + vegetables + ".");
+                </pre>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
+            </div>
             </div>
         </section>
         <footer>

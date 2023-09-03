@@ -6,6 +6,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     min-height: auto;
+    width: 95vw;
     background-color: #eea990;
 }
 
@@ -70,7 +71,7 @@ h2 {
     text-align: center;
     letter-spacing: 3px;
     font-size: 70px;
-    font-weight: lighter;
+    font-weight: bolder;
     background: #CFA393;
     background: #ADCF97;
     background: #CFB6B6;
@@ -92,10 +93,41 @@ pre {
     font-size: 16px;
 }
 
-img {
-    max-width: 350px;
+.image-only {
+    background-size: contain; 
+    background-position: center; 
 }
 
+ img {
+    max-width: 90%;
+    max-height: 100%;
+    border: 2px solid #f6e0b5;
+}
+
+.try-button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+    background-color: #66545e;
+    border: none;
+    border-radius: 20px;
+    margin: 4px 4px;
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.try-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.try-button:hover {
+    background-color: #eea990;
+}
 
 footer {
     text-align: center;
