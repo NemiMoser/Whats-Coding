@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assetsWC/learnable.css">
+    <meta charset="UTF-8"/>
     <style> 
         .navbar {
-        background-color: white;
         overflow: hidden;
         text-align: right;
         }
-        .navbar a:hover {
-            display: inline-block;
-            background-color: #aeb0f1;
-            color: black;
-        }
         .sidebar {
             width: 150px;
-            height: 100%;
-            background-color: rgb(170, 146, 146);
+            height: 40%;
+            background-color: #aa6f73;
             position: fixed;
+            border-style: double;
         }
         .list-items {
             list-style-type: none;
@@ -33,21 +29,27 @@
             padding: 20px;
         }
 
+        
         .columns-container {
-            display: grid;
+            display: flex;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
-            margin-left: 190px;
+            margin-left: 200px;
+            padding-bottom: 20px;
         }
+
         .column {
             flex: 1;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid white;
+            box-shadow: 0 5px 10px rgb(86, 86, 86);
             margin: 10px;
+            max-height: 500px;
+            overflow-y: auto;
         }
         .topicDescription {
             margin-right: 10px;
-            grid-row: 1 / span 2;
+            grid-row: 1 / span 1;
         }
         .rawCode {
             display: flex;
@@ -60,9 +62,9 @@
     <title>CSS</title>
 </head>
 <body>
-    <h1 id="cssTitle"> CSS </h1>
+    <h1 class="page-title"><i class="fa-brands fa-css3-alt" style="padding-right: 5px;"></i>CSS</h1>
         <div class="navbar">
-            <a href="./Project1.html">Home</a>
+            <a href="./Project1.html"><i class="fa-solid fa-house"></i></a>
             <a href="./HTMLPage.html">HTML</a>
             <a href="./CSSPage.html">CSS</a>
             <a href="./JSPage.html">JavaScript</a>
@@ -78,91 +80,141 @@
         </div>
         
         <!--sections-->
-        <section id="background">
+        <h2 id="background">Background</h2>
+        <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <h4>Changing a Background Color</h4>
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    <p>After creating a simple webpage, colors can be added to follow a theme. In order to add colors, we can use CSS to achieve that goal.<br><br>First we create our styles.css file and link it to our HTML like we learned in the previous lesson. Once that has been created and linked, we can begin making changes.<br><br>If we want to change our background to gray, we would add that to the body of the page and apply the changes. Colors can be chosen using RGB (red, green, blue) properties or Hex (#). In this example we wanted to targe the body of the page and we used the hex option and the color is #bcbcbc.</p>
                 </div>
 
             <div class="column deployedScreenshot">
-                <p>Screenshot of deployed site</p>
-                <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
+                <img src="./assetsWC/cssScreenshot.jpg" class="image-only" width="400" height="300">
             </div>
 
             <div class="column rawCode">
-                <p>Raw Code of deployed site</p>
-                <p>codecodecode</p>
-                <div class="button">
-                    <button>Try It!</button>
-                </div>
+                <p><b>Here's what the code looks like:</b></p>
+                <pre>
+                body {
+                    background-color: #bcbcbc;
+                }
+                </pre>
+                <button class="try-button">
+                    <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                </button>
             </div>
         </section>
 
-        <section id="fontsize">
+        <h2 id="fontsize">Changing the Font Size</h2>
+        <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <h4>Changing the Font Size</h4>
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    <p>Font size can be changed to differentiate between sections. You always want the title of the page to be larger than the remaining text on your webpage but you also want each section to stand out.<br><br>Fonts can be changed within HTML using tags as we learned in the previous lesson but CSS can be used if you're looking for a more specific size. This can be done using pixels (px) or percentage (%) sizes.<br><br>In this example, we set a class to the first line and used a period (.) to target each class in CSS. For the class "line1" we used .line1 in CSS to target the font size and make it 25px. If you use an id instead of a class, this would be targeted with a hashtag (#) which we can see in the example as #line2 with a font size of 40px.</p>
                 </div>
 
             <div class="column deployedScreenshot">
-                <p>Screenshot of deployed site</p>
-                    <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
+                    <img src="./assetsWC/cssScreenshot2.jpg" class="image-only" width="400" height="300">
             </div>
 
             <div class="column rawCode">
-                <p>Raw Code of deployed site</p>
-                <p>codecodecode</p>
-                <div class="button">
-                    <button>Try It!</button>
-                </div>
+                <p><b>Here's what the code looks like:</b></p>
+                <pre>
+                body {
+                    background-color: #bcbcbc;
+                }
+                
+                .line1 {
+                    font-size: 25px;
+                }
+                
+                #line2 {
+                    font-size: 40px;
+                }
+                </pre>
+                <button class="try-button">
+                    <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                </button>
             </div>
         </section>
 
-        <section id="boxshadow">
+        <h2 id="boxshadow">Creating a Box Shadow</h2>
+        <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <h4>Creating a Box Shadow</h4>
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    <p>Placing boxes around content can bring attention to a section. In addition to adding a box around the text and editing the text, the box can also be adjusted by adding a shadow.<br><br>A shadow can be added to a specific class or id using the "border" and "box-shadow" properties in CSS. By using "border" you are creating a solid line around the text and the width can be altered with pixels. Once the border has been added, the box-shadow property can be used to create a shadow effect. There are three values in this property: horizontal offset, vertical offset, and blur radius.<br><br>In the example provided, we can see the box-shadow and border properties were added to the class .example1 but only the border property was added to the id #example2 and it does not have a shadow.</p>
                 </div>
 
             <div class="column deployedScreenshot">
-                <p>Screenshot of deployed site</p>
-                    <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
+                    <img src="./assetsWC/cssScreenshot3.jpg" class="image-only" width="400" height="300">
             </div>
 
             <div class="column rawCode">
-                <p>Raw Code of deployed site</p>
-                <p>codecodecode</p>
-                <div class="button">
-                    <button>Try It!</button>
-                </div>
+                <p><b>Here's what the code looks like:</b></p>
+                <pre>
+                    body {
+                        background-color: rgb(255,255,255);
+                    }
+                    
+                    .example1 {
+                        display: inline-block;
+                        border: 1px solid #ccc;
+                        box-shadow: 0px 4px 8px #444444;
+                        padding: 20px;
+                    }
+                    
+                    #example2 {
+                        display: inline-block;
+                        border: 3px solid #ccc;
+                        padding: 20px;
+                    }
+                </pre>
+                <button class="try-button">
+                    <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                </button>
             </div>
         </section>
 
-        <section id="textcolor">
+        <h2 id="textcolor">Changing the Text Color</h2>
+        <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <h4>Changing the Text Color</h4>
-                    <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
+                    <p>Text color is very important when you are designing a webpage. It is important to make your site accessible to all who visit. If the colors chosen don't have enough contrast with the background, it can make it difficult to read what you share.<br><br>Like choosing a background color, we can use the hex(#) or RGB option to select a color for our text. Here we can see the use of both.<br><br>In this example, we can see four different colors against a white background. The title is a shade of brown #736653 and it stands out. Directly below it, though, a very light shade of blue #dbece6 was used and the text is not very visible. The third line uses a slightly darker shade #97a697 but it could still be a bit darker. The last line is in rgb (black) and it is the easiest line to read from all of those examples.<br><br>It is good practice to test out colors prior to deploying your site and to make sure the content will be visible.</p>
                 </div>
 
             <div class="column deployedScreenshot">
-                <p>Screenshot of deployed site</p>
-                    <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
+                    <img src="./assetsWC/cssScreenshot4.jpg" width="400" height="300">
             </div>
 
             <div class="column rawCode">
-                <p>Raw Code of deployed site</p>
-                <p>codecodecode</p>
-                <div class="button">
-                    <button>Try It!</button>
-                </div>
+                <p><b>Here's what the code looks like:</b></p>
+                <pre>
+                body {
+                    background-color: rgb(255,255,255);
+                    color: #736652;
+                }
+                
+                .example1 {
+                    color: #dbece6;
+                    font-size: 25px;
+                }
+                
+                #example2 {
+                    color: #97a697;
+                    font-size: 25px;
+                }
+                
+                .example3 {
+                    color: rgb(0,0,0);
+                    font-size: 25px;
+                }
+                </pre>
+                <button class="try-button">
+                    <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                </button>
             </div>
         </section>
-
-    </div>
-    
+        <footer>
+            <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
+        </footer>
+    <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
 </body>
 </html>

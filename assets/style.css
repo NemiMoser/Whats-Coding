@@ -1,12 +1,14 @@
+/* #region Homepage Styling */
 * {
     box-sizing: border-box;
 }
+
 
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 1;
     align-items: center;
     min-height: 100vh;
     background-color: #eea990;
@@ -15,17 +17,18 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: lighter;
     position: relative;
     bottom: 50px;
     color: #f6e0b5;
+    text-shadow: 4px 7px 8px rgba(48, 69, 41, 0.51);
 }
 
 .card-container {
     display: flex;
     position: relative;
-    bottom: 90px;
+    bottom: 100px;
     justify-content: center;
     margin: 10px;
     padding: 10px;
@@ -40,9 +43,9 @@ h1 {
     padding: 20px 40px 30px 40px;
     border: 2px solid white;
     margin: 15px;
-    box-shadow: 0 5px 15px rgb(86, 86, 86);
+    box-shadow: 0 5px 10px rgb(86, 86, 86);
     width: 30vw;
-    height: 60vh;
+    height: 65vh;
 }
 
 .card h3 {
@@ -55,26 +58,30 @@ h1 {
     font-size: 32px;
 }
 
-.btn {
+.homepage-btn {
     display: inline-flex;
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #7289da;
+    background-color: #66545e;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     margin: 4px 4px;
-    padding: 5px;
-    color: white;
-    font-size: 12px;
-    letter-spacing: 1px;
+    padding: 8px;
+    font-size: 11px;
+    letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 
-.btn:hover {
-    background-color: #FFCC5C;
-    color: #66545e;
+.homepage-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.homepage-btn:hover {
+    background-color: #eea990;
+
 }
 
 .bottom-image {
@@ -122,7 +129,12 @@ h1 {
     height: 150px;
     overflow: auto;
     padding: 5px;
+<<<<<<< HEAD
 }}
+=======
+    line-height: 1.5;
+}
+>>>>>>> 6c56d1ea51ffd76b8ff966a661ab282cfc135462
 
 .bold {
     color: #66545e;
@@ -140,11 +152,19 @@ hr {
     flex-direction: column;
     position: relative;
     top: -50px;
-    height: 200px;
+    height: 170px;
 }
 
 img {
     border: 2px solid #f6e0b5;
+}
+
+
+footer {
+    position: relative;
+    bottom: 20px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 
@@ -189,3 +209,4 @@ img {
         flex-direction: column;
     }
 }
+/* #endregion */

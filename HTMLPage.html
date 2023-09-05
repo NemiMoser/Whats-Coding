@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assetsWC/learnable.css">
+    <meta charset="UTF-8"/>
     <style> 
         .navbar {
-        background-color: white;
         overflow: hidden;
         text-align: right;
         }
-        .navbar a:hover {
-            display: inline-block;
-            background-color: #aeb0f1;
-            color: black;
-        }
         .sidebar {
             width: 150px;
-            height: 100%;
-            background-color: rgb(170, 146, 146);
+            height: 40%;
+            background-color: #aa6f73;
             position: fixed;
+            border-style: double;
         }
         .list-items {
             list-style-type: none;
@@ -33,21 +29,26 @@
             padding: 20px;
         }
 
+
         .columns-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            display: flex;
+            flex: 1;
             gap: 20px;
-            margin-left: 190px;
+            margin-left: 200px;
+            padding-bottom: 20px;
         }
         .column {
             flex: 1;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 1px solid white;
+            box-shadow: 0 5px 10px rgb(86, 86, 86);
             margin: 10px;
+            max-height: 500px;
+            overflow-y: auto;
         }
         .topicDescription {
             margin-right: 10px;
-            grid-row: 1 / span 2;
+            grid-row: 1 / span 1;
         }
         .rawCode {
             display: flex;
@@ -57,12 +58,12 @@
             margin-top: 10px;
         }
     </style>
-    <title>JavaScript</title>
+    <title>HTML</title>
 </head>
 <body>
-        <h1 id="cssTitle"> HTML </h1>
+        <h1 class="page-title"><i class="fa-brands fa-html5" style="padding-right: 5px;"></i>HTML</h1>
         <div class="navbar">
-            <a href="./Project1.html">Home</a>
+            <a href="./Project1.html"><i class="fa-solid fa-house"></i></a>
             <a href="./HTMLPage.html">HTML</a>
             <a href="./CSSPage.html">CSS</a>
             <a href="./JSPage.html">JavaScript</a>
@@ -78,125 +79,160 @@
         </div>
 
         <!--sections-->
-        <section id="learnable1"><div class="columns-container">
-            <div class="column topicDescription">
-                <h4>HTML Set-Up</h4>
-                    <p>HTML is used to create a foundation for applications and webpages and this is made possible with elements and tags.<br><br>Think of an html element as an envelope holding the items that are to be deployed.  For example, the &lt;body&gt; will hold all the main components that make up your webpage.  The tags will always have an opening tag and a closing tag although some can be self-closing.  For the &lt;body&gt; tag previously mentioned, the closing tag would be &lt;/body&gt;.<br><br>The basic structure of HTML can include &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;footer&gt;, and more.<br><br>Tags can also be used to alter the size of the text on the page. For the title, &lt;h1&gt; tags would be used to make the title statnd out. For smaller headers we can use &lt;h4&gt; as this will make the font smaller than the title.<br><br>In the example listed here, we can see the title of the page is larger than the message listed below it.</p>
-            </div>
-
-            <div class="column deployedScreenshot">
-                <img src="./assetsWC/htmlScreenshot1.jpg" alt="Example image of deployed html code">
-            </div>
-
-            <div class="column rawCode">
-                <p>Here's what the code looks like:</p>
-                <pre>
-                &lt;!DOCTYPE html&gt;
-                &lt;html&gt;
-                &lt;head&gt;
-                    &lt;meta charset="UTF-8" /&gt;
-                    &lt;title&gt;Hello World!&lt;/title&gt;
-                &lt;/head&gt;
-                &lt;body&gt;
-                    &lt;h1&gt; Hello World! &lt;/h1&gt;
-                    &lt;h4&gt; Thank you for visiting our site &lt;h4&gt;
-                &lt;/body&gt;
-                &lt;/html&gt;
-                </pre>
-                <div class="button">
-                    <button>Try It!</button>
+        <h2 id="learnable1">HTML Set-Up</h2>
+        <section>
+            <div class="columns-container">
+                <div class="column topicDescription">
+                        <p>HTML is used to create a foundation for applications and webpages and this is made possible with elements and tags.<br><br>Think of an html element as an envelope holding the items that are to be deployed. 
+                            For example, the &lt;body&gt; will hold all the main components that make up your webpage.  The tags will always have an opening tag and a closing tag although some can be self-closing.  
+                            For the &lt;body&gt; tag previously mentioned, the closing tag would be &lt;/body&gt;.<br><br>The basic structure of HTML can include &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;footer&gt;, and more.<br><br>Tags can also be used to alter the size of the text on the page. 
+                            For the title, &lt;h1&gt; tags would be used to make the title statnd out. 
+                            For smaller headers we can use &lt;h4&gt; as this will make the font smaller than the title.
+                        </p>
                 </div>
-            </div>
-        </section>
 
-        <section id="learnable2"><div class="columns-container">
-            <div class="column topicDescription">
-                <h4>List Items</h4>
-                <p>Tags can also be used to create lists. There are two common lists, &lt;ul&gt; or unordered lists and &lt;ol&gt; or ordered lists. An unordered list can be used to list out bullet points if there is no particular order needed. If you'd like to create an numbered list, this is when the ordered list would come in handy.<br><br>The tags used within the &lt;ul&gt; and &lt;ol&gt; tags to enter your information are the &lt;li&gt; tags. These would all be entered within the &lt;body&gt; tags of your html code. <br><br> To change the example to an ordered list, we would simply change the &lt;ul&gt; tag to an &lt;ol&gt; tag and then the items would be listed as 1. HTML Set-up 2. List Items 3. Linking CSS 4. Linking an Image.</p>
-            </div>
+                <div class="column deployedScreenshot">
+                    <img src="./assetsWC/htmlScreenshot1.jpg" alt="Example image of deployed html code" width="400" height="300">
+                    <p>In the example listed here, we can see the title of the page is larger than the message listed below it.</p>
+                </div>
 
-            <div class="column deployedScreenshot">
-                    <img src="./assetsWC/htmlScreenshot2.jpg">
-            </div>
-
-            <div class="column rawCode">
-                <p>Here's what the code looks like:</p>
-                <pre>
+                <div class="column rawCode">
+                    <p><b>Here's what the code looks like:</b></p>
+                    <pre>
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
                     &lt;head&gt;
                         &lt;meta charset="UTF-8" /&gt;
-                        &lt;title&gt;HTML&lt;/title&gt;
+                        &lt;title&gt;Hello World!&lt;/title&gt;
                     &lt;/head&gt;
                     &lt;body&gt;
-                        &lt;h1&gt; Learn HTML today! &lt;/h1&gt;
-                        &lt;h4&gt; Today we will learn about: &lt;h4&gt;
-                        &lt;ul&gt;
-                            &lt;li&gt; HTML Set-Up &lt;/li&gt;
-                            &lt;li&gt; List Items &lt;/li&gt;
-                            &lt;li&gt; Linking CSS &lt;/li&gt;
-                            &lt;li&gt; Linking an Image &lt;/li&gt;
-                        &lt;/ul&gt;
+                        &lt;h1&gt; Hello World! &lt;/h1&gt;
+                        &lt;h4&gt; Thank you for visiting our site &lt;h4&gt;
                     &lt;/body&gt;
                     &lt;/html&gt;
-                </pre>
-                <div class="button">
-                    <button>Try It!</button>
+                    </pre>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
 
-        <section id="learnable3"><div class="columns-container">
-            <div class="column topicDescription">
-                <h4>Linking CSS</h4>
-                <p>CSS is used to make our websites more appealing and we will learn more about that later but it needs to communicate with your html. In order to add this to your html page, you need to link the source directly into your code.<br><br>Once you have created your styles.css document and it has been saved to your chosen directory, you must then add the source to the &lt;head&gt; section of your code. In this case, we would use the &lt;link&gt; tag and specify the path to the CSS file you created using an 'href' attribute.</p>
-            </div>
+        <h2 id="learnable2">List Items</h2>
+        <section>
+            <div class="columns-container">
+                <div class="column topicDescription">
+                    <p>Tags can also be used to create lists. There are two common lists, &lt;ul&gt; or unordered lists and &lt;ol&gt; or ordered lists. An unordered list can be used to list out bullet points if there is no particular order needed. 
+                        If you'd like to create an numbered list, this is when the ordered list would come in handy.<br><br>The tags used within the &lt;ul&gt; and &lt;ol&gt; tags to enter your information are the &lt;li&gt; tags. 
+                        These would all be entered within the &lt;body&gt; tags of your html code.
+                    </p>
+                </div>
 
-            <div class="column deployedScreenshot">
-                    <img src="./assetsWC/htmlScreenshot3.jpg">
-            </div>
+                <div class="column deployedScreenshot">
+                        <img src="./assetsWC/htmlScreenshot2.jpg" width="400" height="300">
+                        <p>To change the example to an ordered list, we would simply change the &lt;ul&gt; tag to an &lt;ol&gt; tag and then the items would be listed as 1. HTML Set-up 2. List Items 3. Linking CSS 4. Linking an Image.</p>
+                </div>
 
-            <div class="column rawCode">
-                <p>Here's what the code looks like:</p>
-                <pre>
+                <div class="column rawCode">
+                    <p><b>Here's what the code looks like:</b></p>
+                    <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8" /&gt;
+                            &lt;title&gt;HTML&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;h1&gt; Learn HTML today! &lt;/h1&gt;
+                            &lt;h4&gt; Today we will learn about: &lt;h4&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt; HTML Set-Up &lt;/li&gt;
+                                &lt;li&gt; List Items &lt;/li&gt;
+                                &lt;li&gt; Linking CSS &lt;/li&gt;
+                                &lt;li&gt; Linking an Image &lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <h2 id="learnable3">Linking CSS</h2>
+        <section>
+            <div class="columns-container">
+                <div class="column topicDescription">
+                    <p>CSS is used to make our websites more appealing and we will learn more about that later but it needs to communicate with your html. In order to add this to your html page, you need to link the source directly into your code.<br><br>Once you have created your styles.css document and it has been saved to your chosen directory, you must then add the source to the &lt;head&gt; section of your code. In this case, we would use the &lt;link&gt; tag and specify the path to the CSS file you created using an 'href' attribute.</p>
+                </div>
+
+                <div class="column deployedScreenshot">
+                        <img src="./assetsWC/htmlScreenshot3.jpg" class="image-only" width="400" height="300">
+                </div>
+
+                <div class="column rawCode">
+                    <p><b>Here's what the code looks like:</b></p>
+                    <pre>
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8" /&gt;
+                            &lt;title&gt; Linking CSS &lt;/title&gt;
+                            &lt;link rel="stylesheet" href="styles.css"&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;p&gt; Linking CSS &lt;/p&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </pre>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <h2 id="learnable4">Linking an Image</h2>
+        <section>
+            <div class="columns-container">
+                <div class="column topicDescription">
+                <p>Adding an image to your web page can also make it more appealing for the users visiting your application. Like CSS, an image is linked using tags.
+                    <br><br>Once you've selected an the image you want to include and you have saved it to your directory, you will use the &lt;img&gt; tag to to specify the path to the image and enter it in the desired section.
+                    <br><br>For example, if you're creating an application about HTML and how it works, you can include an image of the logo directly in the code.
+                </p>
+                </div>
+
+                <div class="column deployedScreenshot">
+                    <img src="./assetsWC/htmlscreenshot5.jpg" class="image-only" width="400" height="300">
+                </div>
+
+                <div class="column rawCode">
+                    <p><b>Here's what the code looks like:</b></p>
+                    <pre>
                     &lt;!DOCTYPE html&gt;
                     &lt;html&gt;
                     &lt;head&gt;
                         &lt;meta charset="UTF-8" /&gt;
-                        &lt;title&gt; Linking CSS &lt;/title&gt;
+                        &lt;title&gt; Linking an Image &lt;/title&gt;
                         &lt;link rel="stylesheet" href="styles.css"&gt;
                     &lt;/head&gt;
                     &lt;body&gt;
-                        &lt;p&gt; Linking CSS &lt;/p&gt;
+                        &lt;h1&gt; Learn More About HTML &lt;/h1&gt;
+                        &lt;img&gt; src="./assetsWC/image.png"&lt;>&gt;
                     &lt;/body&gt;
                     &lt;/html&gt;
-                </pre>
-                <div class="button">
-                    <button>Try It!</button>
+                    </pre>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
-
-        <section id="learnable4"><div class="columns-container">
-            <div class="column topicDescription">
-                <h4>Linking an Image</h4>
-                <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum.<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum<br>Lorem Ipsum Lorem Ipsum Lorem Ipsum</p>
-            </div>
-
-            <div class="column deployedScreenshot">
-                <p>Screenshot of deployed site</p>
-                    <img src="https://dummyimage.com/200x200/000/fff.jpg&text=css+code">
-            </div>
-
-            <div class="column rawCode">
-                <p>Raw Code of deployed site</p>
-                <p>codecodecode</p>
-                <div class="button">
-                    <button>Try It!</button>
-                </div>
-            </div>
-        </section>
-    </div>
-    
+        <footer>
+            <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
+        </footer>
+    <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
 </body>
 </html>
