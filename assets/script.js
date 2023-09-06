@@ -5,7 +5,16 @@ function openModal(modalId, topic) {
       modal.style.display = "block";
       fetchWikipediaData(modalId, topic);
   }
+
+  // Select and hide buttons
+  const buttons = document.querySelectorAll('.homepage-btn');
+  buttons.forEach(button => {
+      button.classList.add('hidden');
+  });
 }
+
+  
+
 
 // Function to fetch data and populate the modal content using JSONP
 function fetchWikipediaData(modalId, topic) {
@@ -48,5 +57,12 @@ function closeModal(modalId) {
   if (modal) {
       modal.style.display = "none";
   }
+
+  // Select and show buttons
+  const buttons = document.querySelectorAll('.homepage-btn');
+  buttons.forEach(button => {
+      button.classList.remove('hidden');
+  });
 }
+
 
