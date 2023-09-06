@@ -5,17 +5,20 @@
     <title>What's Front-End Development?</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;500&family=Poppins:wght@300&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;500&family=Poppins:wght@300;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="icon" href="./assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
     <!--HomePage-->
+    
     <div id="titleArea">
         <h1>What's Front-End Development?</h1>
         <div class="card-container">
@@ -41,7 +44,7 @@
                 </div>
                 <img src="./assets/screenshot3.png" alt="card image" class="bottom-image">
                 <button class="homepage-btn">
-                    <a href="HTMLPage.html"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Learn More!</a>
+                    <a href="HTMLPage.html" class="waves-effect waves-teal btn-flat btn-small"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: skyblue"></i>Learn More!</a>
                 </button>
             </div>
             <!--CSS Card-->
@@ -66,7 +69,7 @@
                 </div>
                 <img src="./assets/screenshot2.png" alt="card image" class="bottom-image">
                 <button class="homepage-btn">
-                    <a href="CSSPage.html"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Learn More!</a>
+                    <a href="CSSPage.html" class="waves-effect waves-teal btn-flat btn-small"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: skyblue"></i>Learn More!</a>
                 </button>
             </div>
             <!--JavaScript Card-->
@@ -91,17 +94,23 @@
                 </div>
                 <img src="./assets/screenshot1.png" alt="card image" class="bottom-image">
                 <button class="homepage-btn">
-                    <a href="JSPage.html"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Learn More!</a>
+                    <a href="JSPage.html" class="waves-effect waves-teal btn-flat btn-small"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: skyblue"></i>Learn More!</a>
                 </button>
             </div>
         </div>
-
-        <!--Footer with credits-->
+        
+  <ul class="pagination">
+    <li class="waves-effect"><a href="HTMLPage.html">1. HTML</a></li>
+    <li class="waves-effect"><a href="CSSPage.html">2. CSS</a></li>
+    <li class="waves-effect"><a href="JSPage.html">3. JavaScript</a></li>
+  </ul>
+           
         <footer>
             <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
         </footer>
     </div>
     <script src="assets/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
 </body>
 </html>
