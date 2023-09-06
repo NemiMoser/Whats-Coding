@@ -46,7 +46,6 @@ body {
 
 
 h1 {
-<<<<<<< HEAD
   text-align: center;
   font-size: 80px;
   font-weight: lighter;
@@ -63,25 +62,6 @@ h1 {
   justify-content: center;
   margin: 10px;
   padding: 10px;
-=======
-    text-align: center;
-    font-size: 80px;
-    font-weight: lighter;
-    position: relative;
-    top: 15px;
-    bottom: 50px;
-    color: #f6e0b5;
-    text-shadow: 4px 7px 8px rgba(48, 69, 41, 0.51);
-}
-
-.card-container {
-    display: flex;
-    position: relative;
-    bottom: 50px;
-    justify-content: center;
-    margin-top: 100px;
-    padding: 10px;
->>>>>>> a3212129304338f46dcf9f18a67ef12246230b59
 }
 
 .card {
@@ -110,7 +90,6 @@ h1 {
 }
 
 .homepage-btn {
-<<<<<<< HEAD
   display: inline-flex;
   position: absolute;
   top: 0;
@@ -135,25 +114,6 @@ h1 {
   background-color: #eea990;
 
 }
-=======
-    display: inline-flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    margin: 4px 4px;
-    font-size: 10px;
-    letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
-.homepage-btn a {
-    text-decoration: none;
-    color: black;
-}
-
->>>>>>> a3212129304338f46dcf9f18a67ef12246230b59
 
 .description {
   position: relative;
@@ -178,7 +138,6 @@ hr {
 }
 
 .bottom-image {
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   position: relative;
@@ -189,18 +148,6 @@ hr {
 img {
   border: 2px solid #f6e0b5;
 }
-=======
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: -50px;
-    height: 250px;
-    border: 10px solid #aa6f73;
-    border-style: groove;
-}
-
-
->>>>>>> a3212129304338f46dcf9f18a67ef12246230b59
 
 
 footer {
