@@ -10,8 +10,8 @@
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
-- [User Story] (#user-story)
-- [Acceptance Criteria] (#acceptance-criteria)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
 - [Live Demo](#live-demo)
 - [License](#license)
 
