@@ -20,6 +20,7 @@ h1 {
     font-size: 80px;
     font-weight: lighter;
     position: relative;
+    top: 15px;
     bottom: 50px;
     color: #f6e0b5;
     text-shadow: 4px 7px 8px rgba(48, 69, 41, 0.51);
@@ -28,9 +29,9 @@ h1 {
 .card-container {
     display: flex;
     position: relative;
-    bottom: 100px;
+    bottom: 50px;
     justify-content: center;
-    margin: 10px;
+    margin-top: 100px;
     padding: 10px;
 }
 
@@ -48,6 +49,7 @@ h1 {
     height: 65vh;
 }
 
+
 .card h3 {
     position: relative;
     bottom: 30px;
@@ -63,12 +65,9 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #66545e;
     border: none;
-    border-radius: 20px;
     margin: 4px 4px;
-    padding: 8px;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -76,13 +75,9 @@ h1 {
 
 .homepage-btn a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
-.homepage-btn:hover {
-    background-color: #eea990;
-
-}
 
 .description {
     position: relative;
@@ -111,12 +106,12 @@ hr {
     flex-direction: column;
     position: relative;
     top: -50px;
-    height: 170px;
+    height: 250px;
+    border: 10px solid #aa6f73;
+    border-style: groove;
 }
 
-img {
-    border: 2px solid #f6e0b5;
-}
+
 
 
 footer {
@@ -124,6 +119,16 @@ footer {
     bottom: 20px;
     text-align: center;
     padding-top: 10px;
+}
+
+.pagination {
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+}
+
+.pagination a:hover {
+    color: white;
 }
 
 
