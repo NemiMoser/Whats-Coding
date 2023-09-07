@@ -46,18 +46,18 @@ h1 {
     margin: 15px;
     box-shadow: 0 5px 10px rgb(86, 86, 86);
     width: 30vw;
-    height: 65vh;
+    height: 60vh;
 }
 
 
 .card h3 {
     position: relative;
-    bottom: 30px;
+    bottom: 20px;
     text-align: center;
     font-weight: bold;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     color: #f6e0b5;
-    font-size: 32px;
+    font-size: 35px;
 }
 
 .homepage-btn {
@@ -66,15 +66,15 @@ h1 {
     top: 0;
     right: 0;
     border: none;
-    margin: 4px 4px;
-    font-size: 10px;
-    letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
 }
 
 .homepage-btn a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: none;
     text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
     color: black;
 }
 
@@ -106,12 +106,10 @@ hr {
     flex-direction: column;
     position: relative;
     top: -50px;
-    height: 250px;
+    height: 225px;
     border: 10px solid #aa6f73;
     border-style: groove;
 }
-
-
 
 
 footer {
@@ -168,9 +166,24 @@ footer {
         height: 200px;
     }
     h1 {
-        font-size: 70px;
+        font-size: 50px;
         display: flex;
         flex-direction: column;
+    }
+    .pagination {
+        display: none;
+    }
+    footer {
+        letter-spacing: 0px;
+        font-size: 10px;
+    }
+    .card h3 {
+        position: relative;
+        bottom: 30px;
+        text-align: left;
+        letter-spacing: 1px;
+        color: #f6e0b5;
+        font-size: 35px;
     }
 }
 /* #endregion */
