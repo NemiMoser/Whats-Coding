@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) { // Adjust this value to control when the navbar appears
@@ -7,7 +6,6 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('active');
     }
 });
-=======
 // Function to open a modal
 function openModal(modalId, topic) {
   const modal = document.getElementById(modalId);
@@ -76,4 +74,3 @@ function closeModal(modalId) {
 }
 
 
->>>>>>> dd4e86892cbb2238845ed4280f0ea32f1954cf99
