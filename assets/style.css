@@ -215,11 +215,11 @@ footer {
         align-items: center;
     }
     .card {
-        width: 70%;
+        width: 90%;
         padding: 20px 40px 30px 40px;
     }
     .bottom-image {
-        height: 250px;
+        height: 165px;
     }
     .description {
         height: 200px;
@@ -239,10 +239,11 @@ footer {
     .card h3 {
         position: relative;
         bottom: 30px;
+        right: 30px;
         text-align: left;
         letter-spacing: 1px;
         color: #f6e0b5;
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 /* #endregion */
