@@ -47,6 +47,47 @@
         .button {
             margin-top: 10px;
         }
+    
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        /* Styles for the modal content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            text-align: center;
+        }
+
+        /* Styles for the progress bar */
+        .progress-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+        }
+
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #4CAF50;
+            color: white;
+            line-height: 30px;
+            text-align: center;
+        }
     </style>
     <title>JavaScript</title>
 </head>
@@ -66,13 +107,26 @@
                 <li class="list-items-individual"><a href="#functions">Functions</a></li>
                 <li class="list-items-individual"><a href="#ifelse">If Else</a></li>
                 <li class="list-items-individual"><a href="#arrays">Arrays</a></li>
+                <li class="list-items-individual"><a onclick="openModal()">Show Progress</a></li>
+                <li class="list-items-individual"><a onclick="clearLocalStorage()">Restart Course</a></li>
             </ul>
         </div>
+<<<<<<< HEAD
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Course Progress</h2>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress">0%</div>
+                </div>
+            </div>
+=======
         <!--Intro Page-->
         <div class="intro columns-container">
             <p>
                 JavaScript can be used to make your page more interactive for the user using a variety of functions. Functions are the basic building blocks of JavaScript and they are a way of packaging functionality that you wish to reuse in your code. Nested functions could have one or more inner functions. The outer functions cannot access variables that are defined inside of the inner functions but inner functions can access variables in outer functions. Variables in codes are used as a form of symbolic name for values in an application. Also known as identifiers, the variable names conform to certain sets of rules and must have a unique name.<br><br>An "if-else" statement is a very common form of conditional used to test if a true or false expression is returned. It allows you to make decisions directly in your code and can even control the flow of the program based on the set conditions. An array is a structure used to store a collection of data values and can be various data types. <br><br>Click on the links to the left to begin learning!
             </p>
+>>>>>>> a3a5cd17d448fa557f49ca0b827420f52cdc68d2
         </div>
         <!--sections-->
         <!--JavaScript Variables Section-->
@@ -96,7 +150,7 @@ var message = "Hello world! My name is ";
 console.log(message + myName + ".");
                     </pre>
                     <button class="try-button">
-                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!</a>
+                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
                     </button>
                 </div>
             </div>
@@ -125,7 +179,7 @@ var result = addNumbers(3, 5, 7);
 console.log(result);
                     </pre>
                     <button class="try-button">
-                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!</a>
+                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
                     </button>
                 </div>
             </div>
@@ -160,7 +214,7 @@ if(expression1 && expression2) {
 }
                     </pre>
                     <button class="try-button">
-                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!</a>
+                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
                     </button>
                 </div>
             </div>
@@ -186,7 +240,7 @@ var message = "I need to buy: "
 console.log(message + vegetables + ".");
                     </pre>
                     <button class="try-button">
-                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!</a>
+                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
                     </button>
                 </div>
             </div>
@@ -195,6 +249,7 @@ console.log(message + vegetables + ".");
         <footer>
             <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
         </footer>
+    <script src="assets/progressbar.js"></script>
     <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
 </body>
 </html>
