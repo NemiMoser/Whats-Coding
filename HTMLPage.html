@@ -47,6 +47,46 @@
         .button {
             margin-top: 10px;
         }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        /* Styles for the modal content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            text-align: center;
+        }
+
+        /* Styles for the progress bar */
+        .progress-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+        }
+
+        .progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #4CAF50;
+            color: white;
+            line-height: 30px;
+            text-align: center;
+        }
     </style>
     <title>HTML</title>
 </head>
@@ -66,6 +106,21 @@
                 <li class="list-items-individual"><a href="#learnable2">List Items</a></li>
                 <li class="list-items-individual"><a href="#learnable3">Linking CSS</a></li>
                 <li class="list-items-individual"><a href="#learnable4">Linking an Image</a></li>
+                <li class="list-items-individual"><a onclick="openModal()">Show Progress</a></li>
+                <li class="list-items-individual"><a onclick="clearLocalStorage()">Restart Course</a></li>
+                </ul>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Course Progress</h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress">0%</div>
+            </div>
+        </div>
+    </div>
+    <!-- Simulate progress with a button click -->
             </ul>
         </div>
         <!--Intro Page-->
@@ -109,7 +164,7 @@
 &lt;/html&gt;
                     </pre>
                     <button class="try-button">
-                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!</a>
+                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
                     </button>
                 </div>
             </div>
@@ -153,7 +208,7 @@
 &lt;/html&gt;
                     </pre>
                     <button class="try-button">
-                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!</a>
+                        <a class="goNext" onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat"style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
                     </button>
                 </div>
             </div>
@@ -187,7 +242,7 @@
 &lt;/html&gt;
                     </pre>
                     <button class="try-button">
-                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!</a>
+                        <a class="goNext" onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat"style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
                     </button>
                 </div>
             </div>
@@ -223,7 +278,7 @@
 &lt;/html&gt;
                     </pre>
                     <button class="try-button">
-                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!</a>
+                        <a class="goNext" onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat"  style="padding-right: 3px; color: yellow"></i>Next lesson</a>
                     </button>
                 </div>
             </div>
@@ -233,5 +288,6 @@
             <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
         </footer>
     <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
+    <script src="assets/progressbar.js"></script>
 </body>
 </html>
