@@ -207,6 +207,29 @@ console.log(message + vegetables + ".");
             </div>
         </section>
 
+    <!--Quiz Section-->
+    <div id="google-form">
+            <button onclick="openQuizPopup()">Test Your Knowledge</button>
+        </div>
+            <script>
+                function openQuizPopup() {
+                    var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSehOVb9K8z86tnUFJ_gLcmL7ddR_ZP-szIbMxVcvuFg57tCOA/viewform?embedded=true';
+        
+                    var popupWidth = 800;
+                    var popupHeight = 600;
+        
+                    var leftPosition = (window.innerWidth - popupWidth) / 2;
+                    var topPosition = (window.innerHeight - popupHeight) / 2;
+        
+                    var popupWindow = window.open(formUrl, 'Quiz Popup', 'width=' + popupWidth + ',height=' + popupHeight + ',left=' + leftPosition + ',top=' + topPosition);
+        
+                    if (popupWindow === null) {
+                        alert('The pop-up window was blocked. Please enable pop-ups for this quiz and try again.');
+                    }
+                }
+                    document.getElementById('quiz-button').addEventListener('click', openQuizPopup);
+            </script>
+
         <!--Footer with credits-->
         <footer>
             <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
