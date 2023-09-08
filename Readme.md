@@ -26,7 +26,6 @@ The site allows the user to select a subject from the navigation bar that they w
 - CSS
 - JavaScript
 - API
-- SandBox
 - Material UI
 
 ## Usage:
