@@ -3,10 +3,9 @@
 <head>
     <link rel="stylesheet" href="./assetsWC/learnable.css">
     <meta charset="UTF-8"/>
-    <style> 
+    <style>
         .navbar {
         overflow: hidden;
-        text-align: right;
         }
         .list-items {
             list-style-type: none;
@@ -51,7 +50,6 @@
     </style>
     <title>HTML</title>
 </head>
-
 <body>
         <h1 class="page-title"><i class="fa-brands fa-html5" style="padding-right: 5px;"></i>HTML</h1>
         <!--Navigation Bar section-->
@@ -61,7 +59,6 @@
             <a href="./CSSPage.html">CSS</a>
             <a href="./JSPage.html">JavaScript</a>
         </div>
-    
         <!--Sidebar menu options-->
         <div class="sidebar">
             <ul class="list-items">
@@ -71,24 +68,28 @@
                 <li class="list-items-individual"><a href="#learnable4">Linking an Image</a></li>
             </ul>
         </div>
-
+        <!--Intro Page-->
+        <div class="intro columns-container">
+            <p>
+                HTML is used to create a foundation for applications and webpages and this is made possible with elements and tags. Think of an html element as an envelope holding the items that are to be deployed. For example, the &lt;body&gt; will hold all the main components that make up your webpage. The tags will always have an opening tag and a closing tag although some can be self-closing.
+                For the &lt;body&gt; tag previously mentioned, the closing tag would be &lt;/body&gt;.<br><br>Tags can also be used to create lists such as &lt;ul&gt; or unordered lists and &lt;ol&gt; or ordered lists, and they can also be used to link outside sources like CSS and images to your html. CSS is used to make our websites more appealing and we will learn more about that later but it needs to communicate with your html. In order to add this to your html page, you need to link the source directly into your code. Adding an image to your web page can also make it more appealing for the users visiting your application. Like CSS, an image is linked using tags.<br><br>Click on the links to the left to begin learning!
+            </p>
+        </div>
         <!--sections-->
         <!--HTML Set-Up Section-->
         <h2 id="learnable1">HTML Set-Up</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>HTML is used to create a foundation for applications and webpages and this is made possible with elements and tags.<br><br>Think of an html element as an envelope holding the items that are to be deployed. 
-                            For example, the &lt;body&gt; will hold all the main components that make up your webpage.  The tags will always have an opening tag and a closing tag although some can be self-closing.  
-                            For the &lt;body&gt; tag previously mentioned, the closing tag would be &lt;/body&gt;.<br><br>The basic structure of HTML can include &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;footer&gt;, and more.<br><br>Tags can also be used to alter the size of the text on the page. 
-                            For the title, &lt;h1&gt; tags would be used to make the title stand out. 
+                    <p>The basic structure of HTML can include &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;footer&gt;, and more.<br><br>Tags can also be used to alter the size of the text on the page.
+                            For the title, &lt;h1&gt; tags would be used to make the title stand out.
                             For smaller headers we can use &lt;h4&gt; as this will make the font smaller than the title.
                     </p>
                 </div>
                 <!--screenshot of example-->
                 <div class="column deployedScreenshot">
                     <img src="./assetsWC/htmlScreenshot1.jpg" alt="Example image of deployed html code" width="400" height="300">
-                    <p>In the example listed here, we can see the title of the page is larger than the message listed below it.
+                    <p>Here we can see the title of the page is larger than the message below it.
                     </p>
                 </div>
                 <!--raw code section-->
@@ -113,21 +114,20 @@
                 </div>
             </div>
         </section>
-
         <!--HTML List Items Section-->
         <h2 id="learnable2">List Items</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>Tags can also be used to create lists. There are two common lists, &lt;ul&gt; or unordered lists and &lt;ol&gt; or ordered lists. An unordered list can be used to list out bullet points if there is no particular order needed. 
-                        If you'd like to create an numbered list, this is when the ordered list would come in handy.<br><br>The tags used within the &lt;ul&gt; and &lt;ol&gt; tags to enter your information are the &lt;li&gt; tags. 
+                    <p>An unordered list can be used to list out bullet points if there is no particular order needed.
+                        If you'd like to create an numbered list, this is when the ordered list would come in handy.<br><br>The tags used within the &lt;ul&gt; and &lt;ol&gt; tags to enter your information are the &lt;li&gt; tags.
                         These would all be entered within the &lt;body&gt; tags of your html code.
                     </p>
                 </div>
                 <!--screenshot of example-->
                 <div class="column deployedScreenshot">
                     <img src="./assetsWC/htmlScreenshot2.jpg" alt="Example image of deployed html code" width="400" height="300">
-                        <p>To change the example to an ordered list, we would simply change the &lt;ul&gt; tag to an &lt;ol&gt; tag and then the items would be listed as 1. HTML Set-up 2. List Items 3. Linking CSS 4. Linking an Image.
+                        <p>To change this to an ordered list, we would change the &lt;ul&gt; tag to an &lt;ol&gt; tag.
                         </p>
                 </div>
                 <!--raw code section-->
@@ -158,13 +158,12 @@
                 </div>
             </div>
         </section>
-
         <!--HTML Linking CSS Section-->
         <h2 id="learnable3">Linking CSS</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>CSS is used to make our websites more appealing and we will learn more about that later but it needs to communicate with your html. In order to add this to your html page, you need to link the source directly into your code.<br><br>Once you have created your styles.css document and it has been saved to your chosen directory, you must then add the source to the &lt;head&gt; section of your code. In this case, we would use the &lt;link&gt; tag and specify the path to the CSS file you created using an 'href' attribute.
+                    <p>Once you have created your styles.css document and it has been saved to your chosen directory, you must then add the source to the &lt;head&gt; section of your code. In this case, we would use the &lt;link&gt; tag and specify the path to the CSS file you created using an 'href' attribute.
                     </p>
                 </div>
                 <!--screenshot of example-->
@@ -193,14 +192,12 @@
                 </div>
             </div>
         </section>
-
         <!--HTML Linking an Image Section-->
         <h2 id="learnable4">Linking an Image</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>Adding an image to your web page can also make it more appealing for the users visiting your application. Like CSS, an image is linked using tags.
-                    <br><br>Once you've selected an the image you want to include and you have saved it to your directory, you will use the &lt;img&gt; tag to to specify the path to the image and enter it in the desired section.
+                    <p>Once you've selected an the image you want to include and you have saved it to your directory, you will use the &lt;img&gt; tag to to specify the path to the image and enter it in the desired section.
                     <br><br>For example, if you're creating an application about HTML and how it works, you can include an image of the logo directly in the code.
                     </p>
                 </div>
@@ -231,7 +228,6 @@
                 </div>
             </div>
         </section>
-
         <!--Footer with credits-->
         <footer>
             <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>

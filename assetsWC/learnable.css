@@ -13,30 +13,31 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    right: 0;
-    z-index: 1000;
-    margin-right: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    text-align: center;
+    margin-right: 10px;
     padding: 5px;
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 22px;
+    letter-spacing: 3px;
     background-color: #f6e0b5;
     border: 5px solid #dbc1ac;
     border-style: outset;
+    max-height: 50px;
 }
 
 .navbar a + a {
-    margin-left: 15px;
+    margin-left: 50px;
 }
 
 .navbar a {
     padding: 5px;
-    float: left;
-    display: block;
-    text-align: center;
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #b38b67;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .navbar a:hover {
@@ -46,6 +47,7 @@ body {
 .page-title {
     position: relative;
     padding-left: 30px;
+    padding-top: 4%;
     font-size: 50px;
     color: #f6e0b5;
     letter-spacing: 1px;
@@ -65,13 +67,14 @@ body {
 
 .list-items a:hover {
     color: #f6e0b5;
+    font-weight: bold;
 }
 
 
 h2 {
-    text-align: right;
-    letter-spacing: 3px;
-    font-size: 70px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 80px;
     font-weight: bolder;
     background: #CFA393;
     background: #ADCF97;
@@ -88,6 +91,7 @@ h2 {
 
 .sidebar {
     width: 160px;
+    margin-top: 2%;
     background-color: #aa6f73;
     position: fixed;
     border-style: double;
@@ -145,17 +149,24 @@ footer {
 
 @media screen and (min-width: 551px) and (max-width: 1076px) {
     .sidebar {
-        width: 130px;
+        width: 120px;
+        margin-right: 10px;
     }
     .columns-container {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        justify-items: flex-end;
+        height: 100vh;
+    }
+    .intro p {
+        position: relative;
+        top: 12%;
+        line-height: 1.5;
     }
     h2 {
         text-align: right;
         letter-spacing: 2px;
-        font-size: 45px;
+        font-size: 40px;
         font-weight: bolder;
         background: #CFA393;
         background: #ADCF97;
@@ -181,10 +192,10 @@ footer {
         top: 0;
         right: 0;
         z-index: 1000;
-        margin-right: 0px;
+        margin-right: 1px;
         padding: 3px;
-        font-size: 15px;
-        letter-spacing: 2px;
+        font-size: 12px;
+        letter-spacing: 1px;
         background-color: #f6e0b5;
         border: 5px solid #dbc1ac;
         border-style: outset;
@@ -230,11 +241,16 @@ footer {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .page-title {
+    .page-title h1 {
         position: relative;
         padding-left: 30px;
         font-size: 40px;
         color: #f6e0b5;
         letter-spacing: 1px;
+    }
+    .intro p {
+        position: relative;
+        top: 15%;
+        line-height: 2;
     }
 }
