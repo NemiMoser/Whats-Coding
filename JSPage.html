@@ -3,10 +3,9 @@
 <head>
     <link rel="stylesheet" href="./assetsWC/learnable.css">
     <meta charset="UTF-8"/>
-    <style> 
+    <style>
         .navbar {
         overflow: hidden;
-        text-align: right;
         }
         .list-items {
             list-style-type: none;
@@ -21,7 +20,6 @@
             margin-left: 250px;
             padding: 20px;
         }
-
         .columns-container {
             display: flex;
             grid-template-columns: repeat(2, 1fr);
@@ -52,7 +50,6 @@
     </style>
     <title>JavaScript</title>
 </head>
-
 <body>
     <h1 class="page-title"><i class="fa-brands fa-js" style="padding-right: 5px;"></i>JavaScript</h1>
         <!--Navigation Bar section-->
@@ -62,7 +59,6 @@
             <a href="./CSSPage.html">CSS</a>
             <a href="./JSPage.html">JavaScript</a>
         </div>
-
         <!--Sidebar menu options-->
         <div class="sidebar">
             <ul class="list-items">
@@ -72,14 +68,19 @@
                 <li class="list-items-individual"><a href="#arrays">Arrays</a></li>
             </ul>
         </div>
-
+        <!--Intro Page-->
+        <div class="intro columns-container">
+            <p>
+                JavaScript can be used to make your page more interactive for the user using a variety of functions. Functions are the basic building blocks of JavaScript and they are a way of packaging functionality that you wish to reuse in your code. Nested functions could have one or more inner functions. The outer functions cannot access variables that are defined inside of the inner functions but inner functions can access variables in outer functions. Variables in codes are used as a form of symbolic name for values in an application. Also known as identifiers, the variable names conform to certain sets of rules and must have a unique name.<br><br>An "if-else" statement is a very common form of conditional used to test if a true or false expression is returned. It allows you to make decisions directly in your code and can even control the flow of the program based on the set conditions. An array is a structure used to store a collection of data values and can be various data types. <br><br>Click on the links to the left to begin learning!
+            </p>
+        </div>
         <!--sections-->
         <!--JavaScript Variables Section-->
         <h2 id="variables">Variables</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>Variables in codes are used as a form of symbolic name for values in an application. Also known as identifiers, the variable names conform to certain sets of rules and must have a unique name.<br><br>They can be used as containers that store values, for example: myName = "John". In this variable, you are assigning the string "John" to the myName variable.
+                    <p>Variables can be used as containers that store values, for example: myName = "John". <br><br>In this variable, you are assigning the string "John" to the myName variable.
                     </p>
                 </div>
                 <!--screenshot of example-->
@@ -92,7 +93,6 @@
                     <pre>
 var myName = "John";
 var message = "Hello world! My name is ";
-
 console.log(message + myName + ".");
                     </pre>
                     <button class="try-button">
@@ -101,13 +101,12 @@ console.log(message + myName + ".");
                 </div>
             </div>
         </section>
-
         <!--JavaScript Functions Section-->
         <h2 id="functions">Functions</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>Functions are the basic building blocks of JavaScript and they are a way of packaging functionality that you wish to reuse in your code. Functions are a good alternative to writing the same code repeatedly since they can be used multiple times. This allows us to make our code more organized and more readable.<br><br>Nested functions could have one or more inner functions. The outer functions cannot access variables that are defined inside of the inner functions but inner functions can access variables in outer functions.
+                    <p>Functions are a good alternative to writing the same code repeatedly since they can be used multiple times. <br><br>This allows us to make our code more organized and more readable.
                     </p>
                 </div>
                 <!--screenshot example-->
@@ -122,7 +121,6 @@ function addNumbers(num1,num2,num3) {
     var result = num1 + num2 + num3;
     return result;
 }
-                        
 var result = addNumbers(3, 5, 7);
 console.log(result);
                     </pre>
@@ -132,13 +130,12 @@ console.log(result);
                 </div>
             </div>
         </section>
-
         <!--JavaScript If Else Section-->
         <h2 id="ifelse">If Else Statement</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>An "if-else" statement is a very common form of conditional used to test if a true or false expression is returned. It allows you to make decisions directly in your code and can even control the flow of the program based on the set conditions.<br><br>For the "if" part, if the condition is in fact true, the code inside that block is executed. If it is false then it is skipped and goes to the "else" part. This is where an alternative set of instructions would be executed since the initial statement was not met.
+                    <p>For the "if" part, if the condition is in fact true, the code inside that block is executed. <br><br>If it is false then it is skipped and goes to the "else" part. This is where an alternative set of instructions would be executed since the initial statement was not met.
                     </p>
                 </div>
                 <!--screenshot of example-->
@@ -152,16 +149,12 @@ console.log(result);
 var x = 100;
 var expression1 = (x > 25);
 var expression2 = (x < 50);
-
 if(expression1 && expression2) {
     console.log('True True');
-
     } else if(expression1) {
     console.log('True False');
-
     } else if(expression2) {
     console.log('False True');
-
     } else {
     console.log('False False');
 }
@@ -172,13 +165,12 @@ if(expression1 && expression2) {
                 </div>
             </div>
         </section>
-        
         <!--JavaScript Arrays Section-->
         <h2 id="arrays">Arrays</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>An array is a structure used to store a collection of data values. These can be various data types. You would declare the arrays in JavaScript and give them a name.<br><br>For example, if you want to create a list of vegetables, the array could be given a variable name of "vegetables" and the items would be listed out.
+                    <p>You would declare the arrays in JavaScript and give them a name.<br><br>For example, if you want to create a list of vegetables, the array could be given a variable name of "vegetables" and the items would be listed out.
                     </p>
                 </div>
                 <!--screenshot of example-->
@@ -191,7 +183,6 @@ if(expression1 && expression2) {
                     <pre>
 var vegetables = ["lettuce", "onion", "cabbage", "potato", "carrot"];
 var message = "I need to buy: "
-                    
 console.log(message + vegetables + ".");
                     </pre>
                     <button class="try-button">
@@ -200,7 +191,6 @@ console.log(message + vegetables + ".");
                 </div>
             </div>
         </section>
-
         <!--Footer with credits-->
         <footer>
             <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
