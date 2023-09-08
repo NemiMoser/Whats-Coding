@@ -28,6 +28,13 @@
     font-weight: bold;
     cursor: pointer;
   }
+  .btn-large {
+    position: absolute;
+    top: 85px;
+    right: 100px;
+
+  }
+  
   /* #region Homepage Styling */
 /* #region Homepage Styling */
 * {
