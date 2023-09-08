@@ -90,6 +90,8 @@ h1 {
 
 .card h3 {
     position: relative;
+    padding-top: 15px;
+    padding-bottom: 10;
     bottom: 20px;
     text-align: center;
     font-weight: bold;
@@ -103,7 +105,8 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    border: none;
+    border: 5px solid #dbc1ac;
+    border-style: outset;
 }
 
 .homepage-btn a {
@@ -111,16 +114,20 @@ h1 {
     font-weight: bold;
     border: none;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     color: black;
 }
 
+.openModal {
+  cursor: pointer;
+}
 
 .description {
   position: relative;
   font-size: 18px;
   top: -60px;
+  padding-top: 5px;
   text-indent: 40px;
   height: 150px;
   overflow: auto;
@@ -190,18 +197,18 @@ footer {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1190px) {
     .card-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .card {
-        width: 90%;
+        width: 70%;
         padding: 20px 40px 30px 40px;
     }
     .bottom-image {
-        height: 165px;
+        height: 300px;
     }
     .description {
         height: 200px;
@@ -227,5 +234,53 @@ footer {
         color: #f6e0b5;
         font-size: 30px;
     }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .card {
+      width: 75%;
+      padding: 20px 40px 30px 40px;
+  }
+  .bottom-image {
+      height: 165px;
+  }
+  .description {
+      height: 200px;
+  }
+  h1 {
+      font-size: 50px;
+      display: flex;
+      flex-direction: column;
+  }
+  .pagination {
+      display: none;
+  }
+  footer {
+      letter-spacing: 0px;
+      font-size: 10px;
+  }
+  .card h3 {
+    display: inline-flex;
+      position: relative;
+      bottom: 35px;
+      text-align: center;
+      letter-spacing: 2px;
+      color: #f6e0b5;
+      font-size: 30px;
+  }
+  .homepage-btn {
+    display: inline-flex;
+    position: relative;
+    top: 50%;
+    justify-content: center;
+}
+  .homepage-btn a {
+    letter-spacing: 8px;
+  }
 }
 /* #endregion */
