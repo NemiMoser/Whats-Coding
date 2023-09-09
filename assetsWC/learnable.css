@@ -72,9 +72,11 @@ body {
 
 
 h2 {
+    position: relative;
+    padding-top: 50px;
     text-align: center;
     letter-spacing: 5px;
-    font-size: 80px;
+    font-size: 65px;
     font-weight: bolder;
     background: #CFA393;
     background: #ADCF97;
@@ -114,6 +116,12 @@ pre {
     max-width: 90%;
     max-height: 100%;
     border: 2px solid #f6e0b5;
+}
+
+.column {
+    position: relative;
+    bottom: 40px;
+
 }
 
 .try-button {
