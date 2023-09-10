@@ -26,8 +26,9 @@ The site allows the user to select a subject from the navigation bar that they w
 - CSS
 - JavaScript
 - Google API
-- Wiki API
+- Wikipedia API
 - Materialize CSS
+- Modals
 
 ## Usage:
 To view the password generator, open the 'index.html' file in your web browser.
