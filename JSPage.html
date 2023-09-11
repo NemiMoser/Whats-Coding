@@ -243,6 +243,9 @@ if(expression1 && expression2) {
            <!--Quiz Section-->
     <div id="google-form">
         <button class="quiz-button" onclick="openQuizPopup()">Test Your Knowledge!</button>
+        <button class="try-button">
+            <a class="goNext" href="index.html" onclick="updateProgress(), clearLocalStorage()",><i class="fa-solid fa-arrow-right fa-beat"  style="padding-right: 3px; color: yellow"></i>Completed</a>
+        </button>
     </div>
             <script>
                 function openQuizPopup() {

@@ -24,7 +24,7 @@ function closeModal() {
 // Function to update the progress bar and save progress in local storage
 function updateProgress() {
     if (progressValue < 100) {
-        progressValue += 25; // Increase progress by 25%
+        progressValue += 50; // Increase progress by 25%
         document.getElementById("progress").style.height = progressValue + "%";
         document.getElementById("progress").innerHTML = progressValue + "%";
         // Save progress in local storage
