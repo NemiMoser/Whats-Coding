@@ -63,6 +63,14 @@ bottom: 50px;
 color: #f6e0b5;
 text-shadow: 4px 7px 8px rgba(48, 69, 41, 0.51);
 }
+#Small-description{
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #f6e0b5 ;
+  font-family: 'Poppins', sans-serif;
+  
+  }
 
 .card-container {
 display: flex;
