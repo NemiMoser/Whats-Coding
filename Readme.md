@@ -2,8 +2,8 @@
 
 ![What's Front-End Development?]
 
-(https://github.com/NemiMoser/Whats-Coding/blob/Nemi/assetsWC/DeployedScreenshot.jpg)
-*Application Screenshot*
+## Screenshot of Application
+![Alt text](assets/appscreenshot.png)
 
 ## Table of Contents:
 - [Introduction](#introduction)
@@ -31,7 +31,7 @@ The site allows the user to select a subject from the navigation bar that they w
 - Modals
 
 ## Usage:
-To view the password generator, open the 'index.html' file in your web browser.
+To view the code learning app, open the 'index.html' file in your web browser.
 
 ## User Story 
 As A new student
@@ -40,13 +40,15 @@ SO THAT I can get familiar with coding basics
 
 ## Acceptance Criteria
 WHEN I go to the homepage
-THEN I am presented with three coding languages to learn from and each section has a written description, an example image, and a ''learn it'' button
-WHEN I click the "learn it" button
+THEN I am presented with three coding languages to learn from and each section has a written description, an example image, and a ''learn more'' button
+WHEN I click the "learn more" button
 THEN I am directed to that specific language 
 WHEN I am on each language's page
 THEN I am presented with four examples, a description, a screenshot of the deployed code, the raw code, and a quiz for each subject
 WHEN I click the quiz button
-THEN I am directed to Google to test what I learned 
+THEN I am directed to Google to test what I learned
+WHEN I click the ''next lesson'' button
+THEN I am directed to the next coding language to learn 
 
 ## Live Demo:
 You can view the live demo of the website at [https://nemimoser.github.io/Whats-Coding/] (https://nemimoser.github.io/Whats-Coding/).
