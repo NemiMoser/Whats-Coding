@@ -73,7 +73,8 @@ body {
 
 h2 {
     position: relative;
-    padding-top: 50px;
+    padding-top: 40px;
+    padding-bottom: 15px;
     text-align: center;
     letter-spacing: 5px;
     font-size: 65px;
@@ -126,7 +127,6 @@ pre {
 
 .try-button {
     display: flex;
-    justify-content: center;
     position: relative;
     bottom: 10px;
     border: 5px solid #dabaa1;
@@ -143,10 +143,44 @@ pre {
 
 .try-button a {
     text-decoration: none;
+    color: white;
 }
 
 .try-button:hover {
     background-color: #7885a0;
+}
+
+
+#google-form {
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+    border: 5px solid #dabaa1;
+    border-style: outset;
+    border-radius: 15px;
+    margin: 3px 3px;
+    padding: 10px;
+    background-color: #eea990;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.quiz-button a {
+    text-decoration: none;
+}
+
+.quiz-button:hover {
+    background-color: #8eaff7;
     color: white;
 }
 
@@ -221,8 +255,9 @@ footer {
         font-size: 15px;
     }
     p, pre {
-        font-size: 12px;
+        font-size: 13px;
     }
+    
     img {
         max-width: 100%;
         max-height: 100%;
