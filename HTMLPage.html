@@ -238,25 +238,30 @@
         </section>
 
     <!--Quiz Section-->
-    <div id="google-form">
-            <button onclick="openQuizPopup()">Test Your Knowledge</button>
+    <div>
+        <button class="try-button">
+            <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+        </button>
+        <div id="google-form">
+            <button id="quiz-button" onclick="openQuizPopup()">Test Your Knowledge</button>
         </div>
-            <script>
+    </div>
+        <script>
             function openQuizPopup() {
-            var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc-hgahmKR9pNuoy6LYYESokyhqmzUxFDDwT8XIofVvKJT4Fw/viewform?embedded=true';
-            var popupWidth = 800;
-            var popupHeight = 600;
-            var leftPosition = (window.innerWidth - popupWidth) / 2;
-            var topPosition = (window.innerHeight - popupHeight) / 2;
-            var features = 'width=' + popupWidth + ',height=' + popupHeight + ',left=' + leftPosition + ',top=' + topPosition +
+                var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc-hgahmKR9pNuoy6LYYESokyhqmzUxFDDwT8XIofVvKJT4Fw/viewform?embedded=true';
+                var popupWidth = 800;
+                var popupHeight = 600;
+                var leftPosition = (window.innerWidth - popupWidth) / 2;
+                var topPosition = (window.innerHeight - popupHeight) / 2;
+                var features = 'width=' + popupWidth + ',height=' + popupHeight + ',left=' + leftPosition + ',top=' + topPosition +
             ',toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes';
 
-            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullScreenElement) {
-                var popupWindow = window.open(formUrl, 'Quiz Popup', features);
-            if (popupWindow === null) {};
+                if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullScreenElement) {
+                    var popupWindow = window.open(formUrl, 'Quiz Popup', features);
+                    if (popupWindow === null) {};
                 }
             }
-</script>
+        </script>
 
     
         <!--Footer with credits-->
