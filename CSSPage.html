@@ -228,23 +228,21 @@ body {
             <button onclick="openQuizPopup()">Test Your Knowledge</button>
         </div>
             <script>
-                function openQuizPopup() {
-                    var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScDTIfxqoQXAto7J1zhuRqNd-0C3ySaddwqNcjt30wF70RfyA/viewform?embedded=true';
-        
-                    var popupWidth = 800;
-                    var popupHeight = 600;
-        
-                    var leftPosition = (window.innerWidth - popupWidth) / 2;
-                    var topPosition = (window.innerHeight - popupHeight) / 2;
-        
-                    var popupWindow = window.open(formUrl, 'Quiz Popup', 'width=' + popupWidth + ',height=' + popupHeight + ',left=' + leftPosition + ',top=' + topPosition);
-        
-                    if (popupWindow === null) {
-                        alert('The pop-up window was blocked. Please enable pop-ups for this quiz and try again.');
-                    }
-                }
-                    document.getElementById('quiz-button').addEventListener('click', openQuizPopup);
-            </script>
+            function openQuizPopup() {
+            var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScDTIfxqoQXAto7J1zhuRqNd-0C3ySaddwqNcjt30wF70RfyA/viewform?embedded=true';
+            var popupWidth = 800;
+            var popupHeight = 600;
+            var leftPosition = (window.innerWidth - popupWidth) / 2;
+            var topPosition = (window.innerHeight - popupHeight) / 2;
+            var features = 'width=' + popupWidth + ',height=' + popupHeight + ',left=' + leftPosition + ',top=' + topPosition +
+            ',toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes';
+
+            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullScreenElement) {
+                var popupWindow = window.open(formUrl, 'Quiz Popup', features);
+                if (popupWindow === null) {};
+        }
+    }
+</script>
 
         <!--Footer with credits-->
         <footer>
