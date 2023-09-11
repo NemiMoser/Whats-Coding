@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./assetsWC/learnable.css">
     <meta charset="UTF-8"/>
-    <style>
+    <style> 
         .navbar {
         overflow: hidden;
+        text-align: right;
+        }
+        .sidebar {
+            width: 150px;
+            height: 40%;
+            background-color: #aa6f73;
+            position: fixed;
+            border-style: double;
         }
         .list-items {
             list-style-type: none;
@@ -19,6 +28,8 @@
             margin-left: 250px;
             padding: 20px;
         }
+
+
         .columns-container {
             display: flex;
             flex: 1;
@@ -46,61 +57,20 @@
         .button {
             margin-top: 10px;
         }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.7);
-        }
-
-        /* Styles for the modal content */
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 50%;
-            text-align: center;
-        }
-
-        /* Styles for the progress bar */
-        .progress-container {
-            position: relative;
-            width: 100%;
-            height: 200px;
-            background-color: #ddd;
-        }
-
-        .progress-bar {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 0;
-            background-color: #4CAF50;
-            color: white;
-            line-height: 30px;
-            text-align: center;
-        }
     </style>
     <title>HTML</title>
-
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assetsWC/learnable.css">
 </head>
+
 <body>
         <h1 class="page-title"><i class="fa-brands fa-html5" style="padding-right: 5px;"></i>HTML</h1>
         <!--Navigation Bar section-->
         <div class="navbar">
-            <a href="./index.html"><i class="fa-solid fa-house fa-bounce"></i></a>
+            <a href="./Project1.html"><i class="fa-solid fa-house"></i></a>
             <a href="./HTMLPage.html">HTML</a>
             <a href="./CSSPage.html">CSS</a>
             <a href="./JSPage.html">JavaScript</a>
         </div>
+    
         <!--Sidebar menu options-->
         <div class="sidebar">
             <ul class="list-items">
@@ -108,51 +78,26 @@
                 <li class="list-items-individual"><a href="#learnable2">List Items</a></li>
                 <li class="list-items-individual"><a href="#learnable3">Linking CSS</a></li>
                 <li class="list-items-individual"><a href="#learnable4">Linking an Image</a></li>
-                <li class="list-items-individual"><a onclick="openModal()">Show Progress</a></li>
-                <li class="list-items-individual"><a onclick="clearLocalStorage()">Restart Course</a></li>
-                </ul>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Course Progress</h2>
-            <div class="progress-container">
-                <div class="progress-bar" id="progress">0%</div>
-            </div>
-        </div>
-    </div>
-    <!-- Simulate progress with a button click -->
             </ul>
         </div>
-        <!--Intro Page-->
-        <div class="intro columns-container">
-            <p>
-                HTML is used to create a foundation for applications and webpages and this is made possible with elements and tags. 
-                Think of an html element as an envelope holding the items that are to be deployed. For example, the &lt;body&gt; will hold all the main components that make up your webpage. 
-                The tags will always have an opening tag and a closing tag although some can be self-closing.
-                For the &lt;body&gt; tag previously mentioned, the closing tag would be &lt;/body&gt;.
-                <br><br>Tags can also be used to create lists such as &lt;ul&gt; or unordered lists and &lt;ol&gt; or ordered lists, and they can also be used to link outside sources like CSS and images to your html. 
-                CSS is used to make our websites more appealing and we will learn more about that later but it needs to communicate with your html. 
-                In order to add this to your html page, you need to link the source directly into your code. Adding an image to your web page can also make it more appealing for the users visiting your application. 
-                Like CSS, an image is linked using tags.<br><br><b>Click on the links to the left to begin learning!</b>
-            </p>
-        </div>
+
         <!--sections-->
         <!--HTML Set-Up Section-->
         <h2 id="learnable1">HTML Set-Up</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>The basic structure of HTML can include &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;footer&gt;, and more.<br><br>Tags can also be used to alter the size of the text on the page.
-                            For the title, &lt;h1&gt; tags would be used to make the title stand out.
+                    <p>HTML is used to create a foundation for applications and webpages and this is made possible with elements and tags.<br><br>Think of an html element as an envelope holding the items that are to be deployed. 
+                            For example, the &lt;body&gt; will hold all the main components that make up your webpage.  The tags will always have an opening tag and a closing tag although some can be self-closing.  
+                            For the &lt;body&gt; tag previously mentioned, the closing tag would be &lt;/body&gt;.<br><br>The basic structure of HTML can include &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;footer&gt;, and more.<br><br>Tags can also be used to alter the size of the text on the page. 
+                            For the title, &lt;h1&gt; tags would be used to make the title stand out. 
                             For smaller headers we can use &lt;h4&gt; as this will make the font smaller than the title.
                     </p>
                 </div>
                 <!--screenshot of example-->
                 <div class="column deployedScreenshot">
                     <img src="./assetsWC/htmlScreenshot1.jpg" alt="Example image of deployed html code" width="400" height="300">
-                    <p>Here we can see the title of the page is larger than the message below it.
+                    <p>In the example listed here, we can see the title of the page is larger than the message listed below it.
                     </p>
                 </div>
                 <!--raw code section-->
@@ -171,23 +116,27 @@
 &lt;/body&gt;
 &lt;/html&gt;
                     </pre>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
+
         <!--HTML List Items Section-->
         <h2 id="learnable2">List Items</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>An unordered list can be used to list out bullet points if there is no particular order needed.
-                        If you'd like to create an numbered list, this is when the ordered list would come in handy.<br><br>The tags used within the &lt;ul&gt; and &lt;ol&gt; tags to enter your information are the &lt;li&gt; tags.
+                    <p>Tags can also be used to create lists. There are two common lists, &lt;ul&gt; or unordered lists and &lt;ol&gt; or ordered lists. An unordered list can be used to list out bullet points if there is no particular order needed. 
+                        If you'd like to create an numbered list, this is when the ordered list would come in handy.<br><br>The tags used within the &lt;ul&gt; and &lt;ol&gt; tags to enter your information are the &lt;li&gt; tags. 
                         These would all be entered within the &lt;body&gt; tags of your html code.
                     </p>
                 </div>
                 <!--screenshot of example-->
                 <div class="column deployedScreenshot">
                     <img src="./assetsWC/htmlScreenshot2.jpg" alt="Example image of deployed html code" width="400" height="300">
-                        <p>To change this to an ordered list, we would change the &lt;ul&gt; tag to an &lt;ol&gt; tag.
+                        <p>To change the example to an ordered list, we would simply change the &lt;ul&gt; tag to an &lt;ol&gt; tag and then the items would be listed as 1. HTML Set-up 2. List Items 3. Linking CSS 4. Linking an Image.
                         </p>
                 </div>
                 <!--raw code section-->
@@ -212,15 +161,19 @@
 &lt;/body&gt;
 &lt;/html&gt;
                     </pre>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
+
         <!--HTML Linking CSS Section-->
         <h2 id="learnable3">Linking CSS</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>Once you have created your styles.css document and it has been saved to your chosen directory, you must then add the source to the &lt;head&gt; section of your code. In this case, we would use the &lt;link&gt; tag and specify the path to the CSS file you created using an 'href' attribute.
+                    <p>CSS is used to make our websites more appealing and we will learn more about that later but it needs to communicate with your html. In order to add this to your html page, you need to link the source directly into your code.<br><br>Once you have created your styles.css document and it has been saved to your chosen directory, you must then add the source to the &lt;head&gt; section of your code. In this case, we would use the &lt;link&gt; tag and specify the path to the CSS file you created using an 'href' attribute.
                     </p>
                 </div>
                 <!--screenshot of example-->
@@ -243,15 +196,20 @@
 &lt;/body&gt;
 &lt;/html&gt;
                     </pre>
+                    <button class="try-button">
+                        <a href="#"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Try It!<i class="fa-solid fa-arrow-left fa-beat"  style="padding-left: 3px; color: yellow"></i></a>
+                    </button>
                 </div>
             </div>
         </section>
+
         <!--HTML Linking an Image Section-->
         <h2 id="learnable4">Linking an Image</h2>
         <section>
             <div class="columns-container">
                 <div class="column topicDescription">
-                    <p>Once you've selected an the image you want to include and you have saved it to your directory, you will use the &lt;img&gt; tag to to specify the path to the image and enter it in the desired section.
+                    <p>Adding an image to your web page can also make it more appealing for the users visiting your application. Like CSS, an image is linked using tags.
+                    <br><br>Once you've selected an the image you want to include and you have saved it to your directory, you will use the &lt;img&gt; tag to to specify the path to the image and enter it in the desired section.
                     <br><br>For example, if you're creating an application about HTML and how it works, you can include an image of the logo directly in the code.
                     </p>
                 </div>
@@ -276,40 +234,48 @@
 &lt;/body&gt;
 &lt;/html&gt;
                     </pre>
+                    <button onclick="openModal()">Begin Quiz</button>
+                    <!-- Modal -->
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <span class="close-button" onclick="closeModal()">&times;</span>
+                        <h2>Test your might</h2>
+                        <!-- Embed the Google Form using an iframe -->
+                        <iframe src="https://forms.gle/1C6T9BhSVXaesTjE6" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                        <button onclick="closeModal()">Close</button>
+                      </div>
+                    </div>
+                  
+                    <script>
+                      // Get the modal element
+                      var modal = document.getElementById('myModal');
+                  
+                      // Function to open the modal
+                      function openModal() {
+                        modal.style.display = 'block';
+                      }
+                  
+                      // Function to close the modal
+                      function closeModal() {
+                        modal.style.display = 'none';
+                      }
+                  
+                      //Close the modal when clicking outside of it
+                      window.onclick = function(event) {
+                        if (event.target == modal) {
+                          closeModal();
+                        }
+                      }
+                    </script>
                 </div>
             </div>
         </section>
-           <!--Quiz Section-->
-    <div id="google-form">
-        <button class="quiz-button" onclick="openQuizPopup()">Test Your Knowledge!</button>
-        <button class="try-button">
-            <a class="goNext" href="CSSPage.html" onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat"  style="padding-right: 3px; color: yellow"></i>Next lesson</a>
-        </button>
-    </div>
-    <script>
-        function openQuizPopup() {
-            var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSc-hgahmKR9pNuoy6LYYESokyhqmzUxFDDwT8XIofVvKJT4Fw/viewform?embedded=true';
-            var popupWidth = 800;
-            var popupHeight = 600;
-            var leftPosition = (window.innerWidth - popupWidth) / 2;
-            var topPosition = (window.innerHeight - popupHeight) / 2;
-            var features = 'width=' + popupWidth + ',height=' + popupHeight + ',left=' + leftPosition + ',top=' + topPosition +
-        ',toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes';
-
-            if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullScreenElement) {
-                var popupWindow = window.open(formUrl, 'Quiz Popup', features);
-                if (popupWindow === null) {};
-            }
-        }
-    </script>
-   
-
+        <!--This is the edit version couldn't figure out how to get rid of the try it buttons sorry. But the modal is working great-->
+       <!--This also needs to be flexed wrapped-->
         <!--Footer with credits-->
         <footer>
             <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
         </footer>
-    
-    <script src="assets/progressbar.js"></script>
     <script src="https://kit.fontawesome.com/e530c905e1.js" crossorigin="anonymous"></script>
 </body>
 </html>

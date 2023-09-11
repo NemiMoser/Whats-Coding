@@ -72,9 +72,12 @@ body {
 
 
 h2 {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 15px;
     text-align: center;
     letter-spacing: 5px;
-    font-size: 80px;
+    font-size: 65px;
     font-weight: bolder;
     background: #CFA393;
     background: #ADCF97;
@@ -116,18 +119,24 @@ pre {
     border: 2px solid #f6e0b5;
 }
 
+.column {
+    position: relative;
+    bottom: 40px;
+
+}
+
 .try-button {
     display: flex;
-    justify-content: center;
     position: relative;
     bottom: 10px;
-    background-color: #66545e;
-    border: none;
-    border-radius: 20px;
-    margin: 4px 4px;
+    border: 5px solid #dabaa1;
+    border-style: outset;
+    border-radius: 15px;
+    margin: 3px 3px;
     padding: 10px;
+    background-color: #eea990;
     font-size: 20px;
-    letter-spacing: 10px;
+    letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
@@ -138,7 +147,41 @@ pre {
 }
 
 .try-button:hover {
+    background-color: #7885a0;
+}
+
+
+#google-form {
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-button {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+    border: 5px solid #dabaa1;
+    border-style: outset;
+    border-radius: 15px;
+    margin: 3px 3px;
+    padding: 10px;
     background-color: #eea990;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.quiz-button a {
+    text-decoration: none;
+}
+
+.quiz-button:hover {
+    background-color: #8eaff7;
+    color: white;
 }
 
 footer {
@@ -212,15 +255,16 @@ footer {
         font-size: 15px;
     }
     p, pre {
-        font-size: 12px;
+        font-size: 13px;
     }
+    
     img {
         max-width: 100%;
-        max-height: 90%;
+        max-height: 100%;
         border: 2px solid #f6e0b5;
     }
     .list-items li {
-        padding-bottom: 30px;
+        padding-bottom: 15px;
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
     }

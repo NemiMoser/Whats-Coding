@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./assetsWC/learnable.css">
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <style>
         .navbar {
         overflow: hidden;
@@ -90,6 +90,9 @@
         }
     </style>
     <title>JavaScript</title>
+
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assetsWC/learnable.css">
 </head>
 <body>
     <h1 class="page-title"><i class="fa-brands fa-js" style="padding-right: 5px;"></i>JavaScript</h1>
@@ -111,7 +114,6 @@
                 <li class="list-items-individual"><a onclick="clearLocalStorage()">Restart Course</a></li>
             </ul>
         </div>
-<<<<<<< HEAD
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeModal()">&times;</span>
@@ -120,13 +122,17 @@
                     <div class="progress-bar" id="progress">0%</div>
                 </div>
             </div>
-=======
+        </div>
         <!--Intro Page-->
         <div class="intro columns-container">
             <p>
-                JavaScript can be used to make your page more interactive for the user using a variety of functions. Functions are the basic building blocks of JavaScript and they are a way of packaging functionality that you wish to reuse in your code. Nested functions could have one or more inner functions. The outer functions cannot access variables that are defined inside of the inner functions but inner functions can access variables in outer functions. Variables in codes are used as a form of symbolic name for values in an application. Also known as identifiers, the variable names conform to certain sets of rules and must have a unique name.<br><br>An "if-else" statement is a very common form of conditional used to test if a true or false expression is returned. It allows you to make decisions directly in your code and can even control the flow of the program based on the set conditions. An array is a structure used to store a collection of data values and can be various data types. <br><br>Click on the links to the left to begin learning!
+                JavaScript can be used to make your page more interactive for the user using a variety of functions. 
+                Functions are the basic building blocks of JavaScript and they are a way of packaging functionality that you wish to reuse in your code. 
+                Nested functions could have one or more inner functions. The outer functions cannot access variables that are defined inside of the inner functions but inner functions can access variables in outer functions. 
+                Variables in codes are used as a form of symbolic name for values in an application. Also known as identifiers, the variable names conform to certain sets of rules and must have a unique name.
+                <br><br>An "if-else" statement is a very common form of conditional used to test if a true or false expression is returned. It allows you to make decisions directly in your code and can even control the flow of the program based on the set conditions. 
+                An array is a structure used to store a collection of data values and can be various data types. <br><br><b>Click on the links to the left to begin learning!</b>
             </p>
->>>>>>> a3a5cd17d448fa557f49ca0b827420f52cdc68d2
         </div>
         <!--sections-->
         <!--JavaScript Variables Section-->
@@ -149,9 +155,6 @@ var myName = "John";
 var message = "Hello world! My name is ";
 console.log(message + myName + ".");
                     </pre>
-                    <button class="try-button">
-                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
-                    </button>
                 </div>
             </div>
         </section>
@@ -178,9 +181,6 @@ function addNumbers(num1,num2,num3) {
 var result = addNumbers(3, 5, 7);
 console.log(result);
                     </pre>
-                    <button class="try-button">
-                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
-                    </button>
                 </div>
             </div>
         </section>
@@ -213,9 +213,6 @@ if(expression1 && expression2) {
     console.log('False False');
 }
                     </pre>
-                    <button class="try-button">
-                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
-                    </button>
                 </div>
             </div>
         </section>
@@ -229,22 +226,40 @@ if(expression1 && expression2) {
                 </div>
                 <!--screenshot of example-->
                 <div class="column deployedScreenshot">
-                    <img src="./assetsWC/arrayScreenshot.jpg" alt="Example image of deployed JavaScript code" class="image-only" width="450" height="150">
+                    <img src="./assetsWC/arrayScreenshot.jpg" alt="Example image of deployed JavaScript code" id="arraypic" class="image-only" width="450" height="150">
                 </div>
                 <!--raw code section-->
                 <div class="column rawCode">
                     <p><b>Here's what the code looks like:</b></p>
                     <pre>
-var vegetables = ["lettuce", "onion", "cabbage", "potato", "carrot"];
-var message = "I need to buy: "
-console.log(message + vegetables + ".");
+                    var vegetables = ["lettuce", "onion", "cabbage", "potato", "carrot"];
+                    var message = "I need to buy: "
+                    console.log(message + vegetables + ".");
                     </pre>
-                    <button class="try-button">
-                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
-                    </button>
                 </div>
             </div>
         </section>
+
+           <!--Quiz Section-->
+    <div id="google-form">
+        <button class="quiz-button" onclick="openQuizPopup()">Test Your Knowledge!</button>
+    </div>
+            <script>
+                function openQuizPopup() {
+                    var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSehOVb9K8z86tnUFJ_gLcmL7ddR_ZP-szIbMxVcvuFg57tCOA/viewform?embedded=true';
+                    var popupWidth = 800;
+                    var popupHeight = 600;
+                    var leftPosition = (window.innerWidth - popupWidth) / 2;
+                    var topPosition = (window.innerHeight - popupHeight) / 2;
+                    var features = 'width=' + popupWidth + ',height=' + popupHeight + ',left=' + leftPosition + ',top=' + topPosition +
+            ',toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes';
+
+                if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullScreenElement) {
+                    var popupWindow = window.open(formUrl, 'Quiz Popup', features);
+                    if (popupWindow === null) {};
+                }
+            }
+            </script>
         <!--Footer with credits-->
         <footer>
             <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
