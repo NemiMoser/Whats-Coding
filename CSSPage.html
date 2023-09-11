@@ -158,10 +158,6 @@ body {
     background-color: #BCBCBC;
 }
                     </pre>
-                    <button class="try-button">
-                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
-
-                    </button>
                 </div>
         </section>
         <!--CSS Font Size Section-->
@@ -190,10 +186,6 @@ body {
     font-size: 40px;
 }
                     </pre>
-                    <button class="try-button">
-                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
-
-                    </button>
                 </div>
         </section>
         <!--CSS Box Shadow Section-->
@@ -226,9 +218,6 @@ body {
     padding: 20px;
 }
                     </pre>
-                    <button class="try-button">
-                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
-                    </button>
                 </div>
         </section>
         <!--CSS Text Color Section-->
@@ -264,13 +253,33 @@ body {
     font-size: 25px;
 }
                     </pre>
-                    <button class="try-button">
-                        <a onclick="updateProgress()"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
-
-                    </button>
                 </div>
             </div>
         </section>
+            <!--Quiz Section-->
+    <div id="google-form">
+        <button class="quiz-button" onclick="openQuizPopup()">Test Your Knowledge</button>
+        <button class="try-button">
+            <a onclick="updateProgress()" href="JSPage.html"><i class="fa-solid fa-arrow-right fa-beat" style="padding-right: 3px; color: yellow"></i>Next Lesson</a>
+        </button>
+    </div>
+        <script>
+            function openQuizPopup() {
+                var formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLScDTIfxqoQXAto7J1zhuRqNd-0C3ySaddwqNcjt30wF70RfyA/viewform?embedded=true';
+                var popupWidth = 800;
+                var popupHeight = 600;
+                var leftPosition = (window.innerWidth - popupWidth) / 2;
+                var topPosition = (window.innerHeight - popupHeight) / 2;
+                var features = 'width=' + popupWidth + ',height=' + popupHeight + ',left=' + leftPosition + ',top=' + topPosition +
+            ',toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes';
+
+                if (!document.fullscreenElement && !document.mozFullScreenElement && !document.webkitFullscreenElement && !document.msFullScreenElement) {
+                    var popupWindow = window.open(formUrl, 'Quiz Popup', features);
+                    if (popupWindow === null) {};
+                }
+            }
+        </script>
+
         <!--Footer with credits-->
         <footer>
             <span>Made By Jonathan Montalvo, Nohemi Moser, Kaian Mui, and Keith Primas<i class="fa-solid fa-laptop-code" style="padding-left: 5px; padding-right: 10px;"></i>All Rights Reserved</span>
